@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1e576ad0-f075-406c-a160-df8e31855b43" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/ModuleAdminService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ModuleAdminService.xsd" MetadataType="Schema" ID="1e7f8629-3eec-4236-bd85-c67cbbb07d4e" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAdminService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ModuleAdminService.wsdl" MetadataType="Wsdl" ID="89b934c6-cc83-40aa-9e64-802ed3e03582" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAdminService.svc?wsdl" />
+    <MetadataFile FileName="ModuleAdminService1.xsd" MetadataType="Schema" ID="5670056e-3824-467b-ad91-007a61f78ab7" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAdminService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ModuleAdminService2.xsd" MetadataType="Schema" ID="96d21557-847d-4582-81e9-d0cc6ba88b5d" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAdminService.svc?xsd=xsd4" />
+    <MetadataFile FileName="ModuleAdminService3.xsd" MetadataType="Schema" ID="f67394f7-5b85-428f-899c-5f75595fd29f" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAdminService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ModuleAdminService.disco" MetadataType="Disco" ID="cb14a457-65bd-48c2-a974-573c5e095b80" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAdminService.svc?disco" />
+    <MetadataFile FileName="ModuleAdminService4.xsd" MetadataType="Schema" ID="8fa9267b-6cef-4304-831f-016aa3a7527c" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAdminService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

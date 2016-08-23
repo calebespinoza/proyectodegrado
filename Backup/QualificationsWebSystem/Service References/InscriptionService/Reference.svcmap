@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b16d24e5-d496-437a-9f2e-8dcd5629300d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/InscriptionsAdminService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InscriptionsAdminService.xsd" MetadataType="Schema" ID="b213f518-08ab-439d-b09b-8a236303f1cc" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/InscriptionsAdminService.svc?xsd=xsd3" />
+    <MetadataFile FileName="InscriptionsAdminService1.xsd" MetadataType="Schema" ID="86bf2901-ac01-41d3-bd81-040844f074e0" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/InscriptionsAdminService.svc?xsd=xsd2" />
+    <MetadataFile FileName="InscriptionsAdminService2.xsd" MetadataType="Schema" ID="00858c4a-8df0-4933-9486-b0b71f640fd1" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/InscriptionsAdminService.svc?xsd=xsd1" />
+    <MetadataFile FileName="InscriptionsAdminService3.xsd" MetadataType="Schema" ID="e4bbda43-0f22-4bc4-ab0d-baed9bdb0285" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/InscriptionsAdminService.svc?xsd=xsd0" />
+    <MetadataFile FileName="InscriptionsAdminService.disco" MetadataType="Disco" ID="afdfb233-f927-48db-841c-89be666fef96" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/InscriptionsAdminService.svc?disco" />
+    <MetadataFile FileName="InscriptionAdminService.wsdl" MetadataType="Wsdl" ID="5b089a44-e8c7-4849-a4d4-dbca003a6b42" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/InscriptionsAdminService.svc?wsdl" />
+    <MetadataFile FileName="InscriptionsAdminService4.xsd" MetadataType="Schema" ID="1d45fb9e-3ef3-459c-9535-f673fb1f0f23" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/InscriptionsAdminService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

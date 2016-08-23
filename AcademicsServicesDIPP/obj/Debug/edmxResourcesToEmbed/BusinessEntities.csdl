@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QualificationsDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="QualificationsDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GraduateProgram" EntityType="QualificationsDBModel.GraduateProgram" />
+    <EntitySet Name="ListAccountStatus" EntityType="QualificationsDBModel.ListAccountStatus" />
+    <EntitySet Name="ListRole" EntityType="QualificationsDBModel.ListRole" />
+    <EntitySet Name="ListTypeProgram" EntityType="QualificationsDBModel.ListTypeProgram" />
+    <EntitySet Name="Module" EntityType="QualificationsDBModel.Module" />
+    <EntitySet Name="OpeningProgram" EntityType="QualificationsDBModel.OpeningProgram" />
+    <EntitySet Name="Person" EntityType="QualificationsDBModel.Person" />
+    <EntitySet Name="sysdiagrams" EntityType="QualificationsDBModel.sysdiagrams" />
+    <EntitySet Name="TeachingModule" EntityType="QualificationsDBModel.TeachingModule" />
+    <EntitySet Name="UserAccount" EntityType="QualificationsDBModel.UserAccount" />
+    <EntitySet Name="UserRole" EntityType="QualificationsDBModel.UserRole" />
+    <AssociationSet Name="FK_GraduateProgram_ListTypeProgram" Association="QualificationsDBModel.FK_GraduateProgram_ListTypeProgram">
+      <End Role="ListTypeProgram" EntitySet="ListTypeProgram" />
+      <End Role="GraduateProgram" EntitySet="GraduateProgram" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OpeningProgram_GraduateProgram" Association="QualificationsDBModel.FK_OpeningProgram_GraduateProgram">
+      <End Role="GraduateProgram" EntitySet="GraduateProgram" />
+      <End Role="OpeningProgram" EntitySet="OpeningProgram" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserAccount_ListAccountStatus" Association="QualificationsDBModel.FK_UserAccount_ListAccountStatus">
+      <End Role="ListAccountStatus" EntitySet="ListAccountStatus" />
+      <End Role="UserAccount" EntitySet="UserAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_ListRole" Association="QualificationsDBModel.FK_UserRole_ListRole">
+      <End Role="ListRole" EntitySet="ListRole" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeachingModule_Module" Association="QualificationsDBModel.FK_TeachingModule_Module">
+      <End Role="Module" EntitySet="Module" />
+      <End Role="TeachingModule" EntitySet="TeachingModule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeachingModule_OpeningProgram" Association="QualificationsDBModel.FK_TeachingModule_OpeningProgram">
+      <End Role="OpeningProgram" EntitySet="OpeningProgram" />
+      <End Role="TeachingModule" EntitySet="TeachingModule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserAccount_Person" Association="QualificationsDBModel.FK_UserAccount_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="UserAccount" EntitySet="UserAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeachingModule_UserRole" Association="QualificationsDBModel.FK_TeachingModule_UserRole">
+      <End Role="UserRole" EntitySet="UserRole" />
+      <End Role="TeachingModule" EntitySet="TeachingModule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_UserAccount" Association="QualificationsDBModel.FK_UserRole_UserAccount">
+      <End Role="UserAccount" EntitySet="UserAccount" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+    <EntitySet Name="Pensum" EntityType="QualificationsDBModel.Pensum" />
+    <AssociationSet Name="FK_Pensum_GraduateProgram" Association="QualificationsDBModel.FK_Pensum_GraduateProgram">
+      <End Role="GraduateProgram" EntitySet="GraduateProgram" />
+      <End Role="Pensum" EntitySet="Pensum" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pensum_Module" Association="QualificationsDBModel.FK_Pensum_Module">
+      <End Role="Module" EntitySet="Module" />
+      <End Role="Pensum" EntitySet="Pensum" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="GraduateProgram">
+    <Key>
+      <PropertyRef Name="GraduateProgramaId" />
+    </Key>
+    <Property Name="GraduateProgramaId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProgramName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Objective" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Profile" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="AdmissionRequeriments" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="ResgistrationCost" Type="Double" Nullable="false" />
+    <NavigationProperty Name="ListTypeProgram" Relationship="QualificationsDBModel.FK_GraduateProgram_ListTypeProgram" FromRole="GraduateProgram" ToRole="ListTypeProgram" />
+    <NavigationProperty Name="OpeningProgram" Relationship="QualificationsDBModel.FK_OpeningProgram_GraduateProgram" FromRole="GraduateProgram" ToRole="OpeningProgram" />
+    <NavigationProperty Name="Pensum" Relationship="QualificationsDBModel.FK_Pensum_GraduateProgram" FromRole="GraduateProgram" ToRole="Pensum" />
+  </EntityType>
+  <EntityType Name="ListAccountStatus">
+    <Key>
+      <PropertyRef Name="UserStatusCode" />
+    </Key>
+    <Property Name="UserStatusCode" Type="Int32" Nullable="false" />
+    <Property Name="UserStatusDescription" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UserAccount" Relationship="QualificationsDBModel.FK_UserAccount_ListAccountStatus" FromRole="ListAccountStatus" ToRole="UserAccount" />
+  </EntityType>
+  <EntityType Name="ListRole">
+    <Key>
+      <PropertyRef Name="RoleCode" />
+    </Key>
+    <Property Name="RoleCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="RolDescription" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UserRole" Relationship="QualificationsDBModel.FK_UserRole_ListRole" FromRole="ListRole" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="ListTypeProgram">
+    <Key>
+      <PropertyRef Name="ListType" />
+    </Key>
+    <Property Name="ListType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeProgram" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="GraduateProgram" Relationship="QualificationsDBModel.FK_GraduateProgram_ListTypeProgram" FromRole="ListTypeProgram" ToRole="GraduateProgram" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ModuleCode" />
+    </Key>
+    <Property Name="ModuleCode" Type="Int64" Nullable="false" />
+    <Property Name="ModuleName" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Mode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Objective" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="TeachingModule" Relationship="QualificationsDBModel.FK_TeachingModule_Module" FromRole="Module" ToRole="TeachingModule" />
+    <NavigationProperty Name="Pensum" Relationship="QualificationsDBModel.FK_Pensum_Module" FromRole="Module" ToRole="Pensum" />
+  </EntityType>
+  <EntityType Name="OpeningProgram">
+    <Key>
+      <PropertyRef Name="OpeningCode" />
+    </Key>
+    <Property Name="OpeningCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProgramId" Type="Int64" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" />
+    <Property Name="Version" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="GraduateProgram" Relationship="QualificationsDBModel.FK_OpeningProgram_GraduateProgram" FromRole="OpeningProgram" ToRole="GraduateProgram" />
+    <NavigationProperty Name="TeachingModule" Relationship="QualificationsDBModel.FK_TeachingModule_OpeningProgram" FromRole="OpeningProgram" ToRole="TeachingModule" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="PersonId" />
+    </Key>
+    <Property Name="PersonId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IdentityCard" Type="Int64" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="MobilePhone" Type="Int64" Nullable="false" />
+    <Property Name="HomePhone" Type="Int64" />
+    <Property Name="DateOfBirth" Type="DateTime" />
+    <Property Name="HomeAddress" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StateProvince" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="Int64" />
+    <Property Name="Profession" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CivilStatus" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="VersionDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="UserAccount" Relationship="QualificationsDBModel.FK_UserAccount_Person" FromRole="Person" ToRole="UserAccount" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TeachingModule">
+    <Key>
+      <PropertyRef Name="TeachingModuleCode" />
+    </Key>
+    <Property Name="TeachingModuleCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleCode" Type="Int64" Nullable="false" />
+    <Property Name="Teacher" Type="Int64" Nullable="false" />
+    <Property Name="OpeningCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModuleStartDate" Type="DateTime" Nullable="false" />
+    <Property Name="ModuleEndDate" Type="DateTime" Nullable="false" />
+    <Property Name="Periods" Type="Int32" />
+    <Property Name="Days" Type="Int32" />
+    <Property Name="Weeks" Type="Int32" />
+    <NavigationProperty Name="Module" Relationship="QualificationsDBModel.FK_TeachingModule_Module" FromRole="TeachingModule" ToRole="Module" />
+    <NavigationProperty Name="OpeningProgram" Relationship="QualificationsDBModel.FK_TeachingModule_OpeningProgram" FromRole="TeachingModule" ToRole="OpeningProgram" />
+    <NavigationProperty Name="UserRole" Relationship="QualificationsDBModel.FK_TeachingModule_UserRole" FromRole="TeachingModule" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="UserAccount">
+    <Key>
+      <PropertyRef Name="UserAccountId" />
+    </Key>
+    <Property Name="UserAccountId" Type="Int64" Nullable="false" />
+    <Property Name="Account" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountStatus" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ListAccountStatus" Relationship="QualificationsDBModel.FK_UserAccount_ListAccountStatus" FromRole="UserAccount" ToRole="ListAccountStatus" />
+    <NavigationProperty Name="Person" Relationship="QualificationsDBModel.FK_UserAccount_Person" FromRole="UserAccount" ToRole="Person" />
+    <NavigationProperty Name="UserRole" Relationship="QualificationsDBModel.FK_UserRole_UserAccount" FromRole="UserAccount" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserRoleCode" />
+    </Key>
+    <Property Name="UserRoleCode" Type="Int64" Nullable="false" />
+    <Property Name="UserAccountId" Type="Int64" Nullable="false" />
+    <Property Name="RoleCode" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ListRole" Relationship="QualificationsDBModel.FK_UserRole_ListRole" FromRole="UserRole" ToRole="ListRole" />
+    <NavigationProperty Name="TeachingModule" Relationship="QualificationsDBModel.FK_TeachingModule_UserRole" FromRole="UserRole" ToRole="TeachingModule" />
+    <NavigationProperty Name="UserAccount" Relationship="QualificationsDBModel.FK_UserRole_UserAccount" FromRole="UserRole" ToRole="UserAccount" />
+  </EntityType>
+  <Association Name="FK_GraduateProgram_ListTypeProgram">
+    <End Role="ListTypeProgram" Type="QualificationsDBModel.ListTypeProgram" Multiplicity="1" />
+    <End Role="GraduateProgram" Type="QualificationsDBModel.GraduateProgram" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListTypeProgram">
+        <PropertyRef Name="ListType" />
+      </Principal>
+      <Dependent Role="GraduateProgram">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OpeningProgram_GraduateProgram">
+    <End Role="GraduateProgram" Type="QualificationsDBModel.GraduateProgram" Multiplicity="1" />
+    <End Role="OpeningProgram" Type="QualificationsDBModel.OpeningProgram" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GraduateProgram">
+        <PropertyRef Name="GraduateProgramaId" />
+      </Principal>
+      <Dependent Role="OpeningProgram">
+        <PropertyRef Name="ProgramId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserAccount_ListAccountStatus">
+    <End Role="ListAccountStatus" Type="QualificationsDBModel.ListAccountStatus" Multiplicity="1" />
+    <End Role="UserAccount" Type="QualificationsDBModel.UserAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListAccountStatus">
+        <PropertyRef Name="UserStatusCode" />
+      </Principal>
+      <Dependent Role="UserAccount">
+        <PropertyRef Name="AccountStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_ListRole">
+    <End Role="ListRole" Type="QualificationsDBModel.ListRole" Multiplicity="1" />
+    <End Role="UserRole" Type="QualificationsDBModel.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListRole">
+        <PropertyRef Name="RoleCode" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="RoleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeachingModule_Module">
+    <End Role="Module" Type="QualificationsDBModel.Module" Multiplicity="1" />
+    <End Role="TeachingModule" Type="QualificationsDBModel.TeachingModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Module">
+        <PropertyRef Name="ModuleCode" />
+      </Principal>
+      <Dependent Role="TeachingModule">
+        <PropertyRef Name="ModuleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeachingModule_OpeningProgram">
+    <End Role="OpeningProgram" Type="QualificationsDBModel.OpeningProgram" Multiplicity="1" />
+    <End Role="TeachingModule" Type="QualificationsDBModel.TeachingModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OpeningProgram">
+        <PropertyRef Name="OpeningCode" />
+      </Principal>
+      <Dependent Role="TeachingModule">
+        <PropertyRef Name="OpeningCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserAccount_Person">
+    <End Role="Person" Type="QualificationsDBModel.Person" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserAccount" Type="QualificationsDBModel.UserAccount" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="PersonId" />
+      </Principal>
+      <Dependent Role="UserAccount">
+        <PropertyRef Name="UserAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeachingModule_UserRole">
+    <End Role="UserRole" Type="QualificationsDBModel.UserRole" Multiplicity="1" />
+    <End Role="TeachingModule" Type="QualificationsDBModel.TeachingModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="UserRoleCode" />
+      </Principal>
+      <Dependent Role="TeachingModule">
+        <PropertyRef Name="Teacher" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_UserAccount">
+    <End Role="UserAccount" Type="QualificationsDBModel.UserAccount" Multiplicity="1" />
+    <End Role="UserRole" Type="QualificationsDBModel.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserAccount">
+        <PropertyRef Name="UserAccountId" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="UserAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Pensum">
+    <Key>
+      <PropertyRef Name="PensumCode" />
+    </Key>
+    <Property Type="Int64" Name="PensumCode" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="GraduateProgram" />
+    <Property Type="Int64" Name="ModuleCode" />
+    <NavigationProperty Name="GraduateProgram1" Relationship="QualificationsDBModel.FK_Pensum_GraduateProgram" FromRole="Pensum" ToRole="GraduateProgram" />
+    <NavigationProperty Name="Module" Relationship="QualificationsDBModel.FK_Pensum_Module" FromRole="Pensum" ToRole="Module" />
+  </EntityType>
+  <Association Name="FK_Pensum_GraduateProgram">
+    <End Type="QualificationsDBModel.GraduateProgram" Role="GraduateProgram" Multiplicity="0..1" />
+    <End Type="QualificationsDBModel.Pensum" Role="Pensum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GraduateProgram">
+        <PropertyRef Name="GraduateProgramaId" />
+      </Principal>
+      <Dependent Role="Pensum">
+        <PropertyRef Name="GraduateProgram" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pensum_Module">
+    <End Type="QualificationsDBModel.Module" Role="Module" Multiplicity="0..1" />
+    <End Type="QualificationsDBModel.Pensum" Role="Pensum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Module">
+        <PropertyRef Name="ModuleCode" />
+      </Principal>
+      <Dependent Role="Pensum">
+        <PropertyRef Name="ModuleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

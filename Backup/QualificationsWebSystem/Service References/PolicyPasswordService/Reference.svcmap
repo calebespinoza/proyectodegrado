@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3e671bf4-ba36-4139-9bfb-b9700922492a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/PolicyPasswordService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PolicyPasswordService.disco" MetadataType="Disco" ID="ae08745c-1fac-4bb7-87aa-0cd93d1619d3" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/PolicyPasswordService.svc?disco" />
+    <MetadataFile FileName="PolicyPasswordAdminService.wsdl" MetadataType="Wsdl" ID="410bce0d-0832-4419-87fe-4755def3b94d" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/PolicyPasswordService.svc?wsdl" />
+    <MetadataFile FileName="PolicyPasswordService.xsd" MetadataType="Schema" ID="8bc6fc24-d884-4e3f-b731-1a107a6d780e" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/PolicyPasswordService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PolicyPasswordService1.xsd" MetadataType="Schema" ID="bff34883-5ba5-45dd-9b6f-830599079d30" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/PolicyPasswordService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PolicyPasswordService2.xsd" MetadataType="Schema" ID="eaeeb0b4-394e-4bd5-8484-4596bc27a36e" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/PolicyPasswordService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PolicyPasswordService3.xsd" MetadataType="Schema" ID="87163980-c9b5-45cc-a9b9-42a7f7c5c321" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/PolicyPasswordService.svc?xsd=xsd4" />
+    <MetadataFile FileName="PolicyPasswordService4.xsd" MetadataType="Schema" ID="a27ffbcb-1abe-47b5-b319-74aba2a99001" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/PolicyPasswordService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

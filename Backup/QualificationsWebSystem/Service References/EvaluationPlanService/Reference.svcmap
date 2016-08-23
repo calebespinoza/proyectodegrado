@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="34a015be-a00b-4adb-a4cb-598aa1afda6d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/EvaluationPlanService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EvaluationPlanService.xsd" MetadataType="Schema" ID="16b7806f-874a-43cb-87cf-06fc22a46fda" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/EvaluationPlanService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EvaluationPlanService1.xsd" MetadataType="Schema" ID="1e3661fc-eb97-4355-a670-2b4185a77253" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/EvaluationPlanService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EvaluationPlanService2.xsd" MetadataType="Schema" ID="892ed18d-a776-45ff-ad46-18b5a9080a3e" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/EvaluationPlanService.svc?xsd=xsd4" />
+    <MetadataFile FileName="EvaluationPlanAdminService.wsdl" MetadataType="Wsdl" ID="deb4852a-6782-4d01-b321-05f943083c9f" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/EvaluationPlanService.svc?wsdl" />
+    <MetadataFile FileName="EvaluationPlanService3.xsd" MetadataType="Schema" ID="a29c7ebf-535d-4cfc-950d-b8ff7e752819" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/EvaluationPlanService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EvaluationPlanService.disco" MetadataType="Disco" ID="ccb47a12-3d59-428b-a4d3-efec1e6505b2" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/EvaluationPlanService.svc?disco" />
+    <MetadataFile FileName="EvaluationPlanService4.xsd" MetadataType="Schema" ID="ecb3e5cf-9ba0-4b4e-b794-090171a4d5c5" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/EvaluationPlanService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

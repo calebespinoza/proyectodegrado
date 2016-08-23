@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QualificationsDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="QualificationsDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bibliography" EntityType="QualificationsDBModel.Bibliography" />
+    <EntitySet Name="ContentThematic" EntityType="QualificationsDBModel.ContentThematic" />
+    <EntitySet Name="EndEvaluation" EntityType="QualificationsDBModel.EndEvaluation" />
+    <EntitySet Name="EvaluationForms" EntityType="QualificationsDBModel.EvaluationForms" />
+    <EntitySet Name="EvaluationPlan" EntityType="QualificationsDBModel.EvaluationPlan" />
+    <EntitySet Name="GlobalPlan" EntityType="QualificationsDBModel.GlobalPlan" />
+    <EntitySet Name="GraduateProgram" EntityType="QualificationsDBModel.GraduateProgram" />
+    <EntitySet Name="LearningMethods" EntityType="QualificationsDBModel.LearningMethods" />
+    <EntitySet Name="ListAccountStatus" EntityType="QualificationsDBModel.ListAccountStatus" />
+    <EntitySet Name="ListRole" EntityType="QualificationsDBModel.ListRole" />
+    <EntitySet Name="ListTypeProgram" EntityType="QualificationsDBModel.ListTypeProgram" />
+    <EntitySet Name="Module" EntityType="QualificationsDBModel.Module" />
+    <EntitySet Name="ObjectivesSpecifics" EntityType="QualificationsDBModel.ObjectivesSpecifics" />
+    <EntitySet Name="OpeningProgram" EntityType="QualificationsDBModel.OpeningProgram" />
+    <EntitySet Name="PasswordPolicy" EntityType="QualificationsDBModel.PasswordPolicy" />
+    <EntitySet Name="Pensum" EntityType="QualificationsDBModel.Pensum" />
+    <EntitySet Name="Person" EntityType="QualificationsDBModel.Person" />
+    <EntitySet Name="Qualifications" EntityType="QualificationsDBModel.Qualifications" />
+    <EntitySet Name="StatusGlobalPlan" EntityType="QualificationsDBModel.StatusGlobalPlan" />
+    <EntitySet Name="StatusModule" EntityType="QualificationsDBModel.StatusModule" />
+    <EntitySet Name="StatusOpening" EntityType="QualificationsDBModel.StatusOpening" />
+    <EntitySet Name="StatusTheme" EntityType="QualificationsDBModel.StatusTheme" />
+    <EntitySet Name="StatusThemeContent" EntityType="QualificationsDBModel.StatusThemeContent" />
+    <EntitySet Name="StudentModule" EntityType="QualificationsDBModel.StudentModule" />
+    <EntitySet Name="TeachingMethods" EntityType="QualificationsDBModel.TeachingMethods" />
+    <EntitySet Name="TeachingModule" EntityType="QualificationsDBModel.TeachingModule" />
+    <EntitySet Name="Totals" EntityType="QualificationsDBModel.Totals" />
+    <EntitySet Name="UserAccount" EntityType="QualificationsDBModel.UserAccount" />
+    <EntitySet Name="UserRole" EntityType="QualificationsDBModel.UserRole" />
+    <EntitySet Name="Version" EntityType="QualificationsDBModel.Version" />
+    <AssociationSet Name="FK_Bibliography_GlobalPlan" Association="QualificationsDBModel.FK_Bibliography_GlobalPlan">
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+      <End Role="Bibliography" EntitySet="Bibliography" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Content_GlobalPlan" Association="QualificationsDBModel.FK_Content_GlobalPlan">
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+      <End Role="ContentThematic" EntitySet="ContentThematic" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StatusThemeContent_ContentThematic" Association="QualificationsDBModel.FK_StatusThemeContent_ContentThematic">
+      <End Role="ContentThematic" EntitySet="ContentThematic" />
+      <End Role="StatusThemeContent" EntitySet="StatusThemeContent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EndEvaluation_GlobalPlan" Association="QualificationsDBModel.FK_EndEvaluation_GlobalPlan">
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+      <End Role="EndEvaluation" EntitySet="EndEvaluation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EvaluationForms_GlobalPlan" Association="QualificationsDBModel.FK_EvaluationForms_GlobalPlan">
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+      <End Role="EvaluationForms" EntitySet="EvaluationForms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EvaluationPlan_GlobalPlan" Association="QualificationsDBModel.FK_EvaluationPlan_GlobalPlan">
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+      <End Role="EvaluationPlan" EntitySet="EvaluationPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Qualifications_EvaluationPlan" Association="QualificationsDBModel.FK_Qualifications_EvaluationPlan">
+      <End Role="EvaluationPlan" EntitySet="EvaluationPlan" />
+      <End Role="Qualifications" EntitySet="Qualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GlobalPlan_StatusGlobalPlan" Association="QualificationsDBModel.FK_GlobalPlan_StatusGlobalPlan">
+      <End Role="StatusGlobalPlan" EntitySet="StatusGlobalPlan" />
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GlobalPlan_TeachingModule" Association="QualificationsDBModel.FK_GlobalPlan_TeachingModule">
+      <End Role="TeachingModule" EntitySet="TeachingModule" />
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LearningMethods_GlobalPlan" Association="QualificationsDBModel.FK_LearningMethods_GlobalPlan">
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+      <End Role="LearningMethods" EntitySet="LearningMethods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ObjectivesSpecifics_GlobalPlan" Association="QualificationsDBModel.FK_ObjectivesSpecifics_GlobalPlan">
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+      <End Role="ObjectivesSpecifics" EntitySet="ObjectivesSpecifics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeachingMethods_GlobalPlan" Association="QualificationsDBModel.FK_TeachingMethods_GlobalPlan">
+      <End Role="GlobalPlan" EntitySet="GlobalPlan" />
+      <End Role="TeachingMethods" EntitySet="TeachingMethods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GraduateProgram_ListTypeProgram" Association="QualificationsDBModel.FK_GraduateProgram_ListTypeProgram">
+      <End Role="ListTypeProgram" EntitySet="ListTypeProgram" />
+      <End Role="GraduateProgram" EntitySet="GraduateProgram" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OpeningProgram_GraduateProgram" Association="QualificationsDBModel.FK_OpeningProgram_GraduateProgram">
+      <End Role="GraduateProgram" EntitySet="GraduateProgram" />
+      <End Role="OpeningProgram" EntitySet="OpeningProgram" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pensum_GraduateProgram" Association="QualificationsDBModel.FK_Pensum_GraduateProgram">
+      <End Role="GraduateProgram" EntitySet="GraduateProgram" />
+      <End Role="Pensum" EntitySet="Pensum" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserAccount_ListAccountStatus" Association="QualificationsDBModel.FK_UserAccount_ListAccountStatus">
+      <End Role="ListAccountStatus" EntitySet="ListAccountStatus" />
+      <End Role="UserAccount" EntitySet="UserAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_ListRole" Association="QualificationsDBModel.FK_UserRole_ListRole">
+      <End Role="ListRole" EntitySet="ListRole" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Module_StatusModule" Association="QualificationsDBModel.FK_Module_StatusModule">
+      <End Role="StatusModule" EntitySet="StatusModule" />
+      <End Role="Module" EntitySet="Module" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pensum_Module" Association="QualificationsDBModel.FK_Pensum_Module">
+      <End Role="Module" EntitySet="Module" />
+      <End Role="Pensum" EntitySet="Pensum" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeachingModule_Module" Association="QualificationsDBModel.FK_TeachingModule_Module">
+      <End Role="Module" EntitySet="Module" />
+      <End Role="TeachingModule" EntitySet="TeachingModule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OpeningProgram_StatusOpening" Association="QualificationsDBModel.FK_OpeningProgram_StatusOpening">
+      <End Role="StatusOpening" EntitySet="StatusOpening" />
+      <End Role="OpeningProgram" EntitySet="OpeningProgram" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OpeningProgram_Version" Association="QualificationsDBModel.FK_OpeningProgram_Version">
+      <End Role="Version" EntitySet="Version" />
+      <End Role="OpeningProgram" EntitySet="OpeningProgram" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeachingModule_OpeningProgram" Association="QualificationsDBModel.FK_TeachingModule_OpeningProgram">
+      <End Role="OpeningProgram" EntitySet="OpeningProgram" />
+      <End Role="TeachingModule" EntitySet="TeachingModule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentModule_Person" Association="QualificationsDBModel.FK_StudentModule_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="StudentModule" EntitySet="StudentModule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserAccount_Person" Association="QualificationsDBModel.FK_UserAccount_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="UserAccount" EntitySet="UserAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Qualifications_StudentModule" Association="QualificationsDBModel.FK_Qualifications_StudentModule">
+      <End Role="StudentModule" EntitySet="StudentModule" />
+      <End Role="Qualifications" EntitySet="Qualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StatusThemeContent_StatusTheme" Association="QualificationsDBModel.FK_StatusThemeContent_StatusTheme">
+      <End Role="StatusTheme" EntitySet="StatusTheme" />
+      <End Role="StatusThemeContent" EntitySet="StatusThemeContent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentModule_TeachingModule" Association="QualificationsDBModel.FK_StudentModule_TeachingModule">
+      <End Role="TeachingModule" EntitySet="TeachingModule" />
+      <End Role="StudentModule" EntitySet="StudentModule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Totals_StudentModule" Association="QualificationsDBModel.FK_Totals_StudentModule">
+      <End Role="StudentModule" EntitySet="StudentModule" />
+      <End Role="Totals" EntitySet="Totals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeachingModule_UserAccount" Association="QualificationsDBModel.FK_TeachingModule_UserAccount">
+      <End Role="UserAccount" EntitySet="UserAccount" />
+      <End Role="TeachingModule" EntitySet="TeachingModule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_UserAccount" Association="QualificationsDBModel.FK_UserRole_UserAccount">
+      <End Role="UserAccount" EntitySet="UserAccount" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Bibliography">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Author" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Editorial" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Year" Type="Int64" />
+    <Property Name="GlobalPlan" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="GlobalPlan1" Relationship="QualificationsDBModel.FK_Bibliography_GlobalPlan" FromRole="Bibliography" ToRole="GlobalPlan" />
+  </EntityType>
+  <EntityType Name="ContentThematic">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Theme" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="InstrumentalObjectives" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="InvestigationThemes" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="PersonalWork" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="GroupWork" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="GlobalPlan" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="GlobalPlan1" Relationship="QualificationsDBModel.FK_Content_GlobalPlan" FromRole="ContentThematic" ToRole="GlobalPlan" />
+    <NavigationProperty Name="StatusThemeContent" Relationship="QualificationsDBModel.FK_StatusThemeContent_ContentThematic" FromRole="ContentThematic" ToRole="StatusThemeContent" />
+  </EntityType>
+  <EntityType Name="EndEvaluation">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int64" Nullable="false" />
+    <Property Name="Form" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Mode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" />
+    <Property Name="Consideration" Type="Double" />
+    <NavigationProperty Name="GlobalPlan" Relationship="QualificationsDBModel.FK_EndEvaluation_GlobalPlan" FromRole="EndEvaluation" ToRole="GlobalPlan" />
+  </EntityType>
+  <EntityType Name="EvaluationForms">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EvaluationForm" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Justification" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="GlobalPlan" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="GlobalPlan1" Relationship="QualificationsDBModel.FK_EvaluationForms_GlobalPlan" FromRole="EvaluationForms" ToRole="GlobalPlan" />
+  </EntityType>
+  <EntityType Name="EvaluationPlan">
+    <Key>
+      <PropertyRef Name="EvaluationCode" />
+    </Key>
+    <Property Name="EvaluationCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Consideration" Type="Double" />
+    <Property Name="Mode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" />
+    <Property Name="GlobalPlanCode" Type="Int64" />
+    <NavigationProperty Name="GlobalPlan" Relationship="QualificationsDBModel.FK_EvaluationPlan_GlobalPlan" FromRole="EvaluationPlan" ToRole="GlobalPlan" />
+    <NavigationProperty Name="Qualifications" Relationship="QualificationsDBModel.FK_Qualifications_EvaluationPlan" FromRole="EvaluationPlan" ToRole="Qualifications" />
+  </EntityType>
+  <EntityType Name="GlobalPlan">
+    <Key>
+      <PropertyRef Name="GlobalPlanCode" />
+    </Key>
+    <Property Name="GlobalPlanCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeachingModuleCode" Type="Int64" />
+    <Property Name="Foundamentation" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="GeneralObjective" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int64" />
+    <Property Name="Fecha" Type="DateTime" />
+    <NavigationProperty Name="Bibliography" Relationship="QualificationsDBModel.FK_Bibliography_GlobalPlan" FromRole="GlobalPlan" ToRole="Bibliography" />
+    <NavigationProperty Name="ContentThematic" Relationship="QualificationsDBModel.FK_Content_GlobalPlan" FromRole="GlobalPlan" ToRole="ContentThematic" />
+    <NavigationProperty Name="EndEvaluation" Relationship="QualificationsDBModel.FK_EndEvaluation_GlobalPlan" FromRole="GlobalPlan" ToRole="EndEvaluation" />
+    <NavigationProperty Name="EvaluationForms" Relationship="QualificationsDBModel.FK_EvaluationForms_GlobalPlan" FromRole="GlobalPlan" ToRole="EvaluationForms" />
+    <NavigationProperty Name="EvaluationPlan" Relationship="QualificationsDBModel.FK_EvaluationPlan_GlobalPlan" FromRole="GlobalPlan" ToRole="EvaluationPlan" />
+    <NavigationProperty Name="StatusGlobalPlan" Relationship="QualificationsDBModel.FK_GlobalPlan_StatusGlobalPlan" FromRole="GlobalPlan" ToRole="StatusGlobalPlan" />
+    <NavigationProperty Name="TeachingModule" Relationship="QualificationsDBModel.FK_GlobalPlan_TeachingModule" FromRole="GlobalPlan" ToRole="TeachingModule" />
+    <NavigationProperty Name="LearningMethods" Relationship="QualificationsDBModel.FK_LearningMethods_GlobalPlan" FromRole="GlobalPlan" ToRole="LearningMethods" />
+    <NavigationProperty Name="ObjectivesSpecifics" Relationship="QualificationsDBModel.FK_ObjectivesSpecifics_GlobalPlan" FromRole="GlobalPlan" ToRole="ObjectivesSpecifics" />
+    <NavigationProperty Name="TeachingMethods" Relationship="QualificationsDBModel.FK_TeachingMethods_GlobalPlan" FromRole="GlobalPlan" ToRole="TeachingMethods" />
+  </EntityType>
+  <EntityType Name="GraduateProgram">
+    <Key>
+      <PropertyRef Name="GraduateProgramaId" />
+    </Key>
+    <Property Name="GraduateProgramaId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProgramName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Objective" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Profile" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="AdmissionRequeriments" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="ResgistrationCost" Type="Double" Nullable="false" />
+    <NavigationProperty Name="ListTypeProgram" Relationship="QualificationsDBModel.FK_GraduateProgram_ListTypeProgram" FromRole="GraduateProgram" ToRole="ListTypeProgram" />
+    <NavigationProperty Name="OpeningProgram" Relationship="QualificationsDBModel.FK_OpeningProgram_GraduateProgram" FromRole="GraduateProgram" ToRole="OpeningProgram" />
+    <NavigationProperty Name="Pensum" Relationship="QualificationsDBModel.FK_Pensum_GraduateProgram" FromRole="GraduateProgram" ToRole="Pensum" />
+  </EntityType>
+  <EntityType Name="LearningMethods">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MethodName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Justification" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PlanGlobal" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="GlobalPlan" Relationship="QualificationsDBModel.FK_LearningMethods_GlobalPlan" FromRole="LearningMethods" ToRole="GlobalPlan" />
+  </EntityType>
+  <EntityType Name="ListAccountStatus">
+    <Key>
+      <PropertyRef Name="UserStatusCode" />
+    </Key>
+    <Property Name="UserStatusCode" Type="Int32" Nullable="false" />
+    <Property Name="UserStatusDescription" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UserAccount" Relationship="QualificationsDBModel.FK_UserAccount_ListAccountStatus" FromRole="ListAccountStatus" ToRole="UserAccount" />
+  </EntityType>
+  <EntityType Name="ListRole">
+    <Key>
+      <PropertyRef Name="RoleCode" />
+    </Key>
+    <Property Name="RoleCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="RolDescription" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="UserRole" Relationship="QualificationsDBModel.FK_UserRole_ListRole" FromRole="ListRole" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="ListTypeProgram">
+    <Key>
+      <PropertyRef Name="ListType" />
+    </Key>
+    <Property Name="ListType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeProgram" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="GraduateProgram" Relationship="QualificationsDBModel.FK_GraduateProgram_ListTypeProgram" FromRole="ListTypeProgram" ToRole="GraduateProgram" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ModuleCode" />
+    </Key>
+    <Property Name="ModuleCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Mode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int64" />
+    <NavigationProperty Name="StatusModule" Relationship="QualificationsDBModel.FK_Module_StatusModule" FromRole="Module" ToRole="StatusModule" />
+    <NavigationProperty Name="Pensum" Relationship="QualificationsDBModel.FK_Pensum_Module" FromRole="Module" ToRole="Pensum" />
+    <NavigationProperty Name="TeachingModule" Relationship="QualificationsDBModel.FK_TeachingModule_Module" FromRole="Module" ToRole="TeachingModule" />
+  </EntityType>
+  <EntityType Name="ObjectivesSpecifics">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Number" Type="Int64" />
+    <Property Name="Description" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="GlobalPlan" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="GlobalPlan1" Relationship="QualificationsDBModel.FK_ObjectivesSpecifics_GlobalPlan" FromRole="ObjectivesSpecifics" ToRole="GlobalPlan" />
+  </EntityType>
+  <EntityType Name="OpeningProgram">
+    <Key>
+      <PropertyRef Name="OpeningCode" />
+    </Key>
+    <Property Name="OpeningCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProgramId" Type="Int64" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" />
+    <Property Name="Version" Type="Int32" Nullable="false" />
+    <Property Name="Gestion" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int64" />
+    <NavigationProperty Name="GraduateProgram" Relationship="QualificationsDBModel.FK_OpeningProgram_GraduateProgram" FromRole="OpeningProgram" ToRole="GraduateProgram" />
+    <NavigationProperty Name="StatusOpening" Relationship="QualificationsDBModel.FK_OpeningProgram_StatusOpening" FromRole="OpeningProgram" ToRole="StatusOpening" />
+    <NavigationProperty Name="Version1" Relationship="QualificationsDBModel.FK_OpeningProgram_Version" FromRole="OpeningProgram" ToRole="Version" />
+    <NavigationProperty Name="TeachingModule" Relationship="QualificationsDBModel.FK_TeachingModule_OpeningProgram" FromRole="OpeningProgram" ToRole="TeachingModule" />
+  </EntityType>
+  <EntityType Name="PasswordPolicy">
+    <Key>
+      <PropertyRef Name="PasswordPolicyCode" />
+    </Key>
+    <Property Name="PasswordPolicyCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Int64" Nullable="false" />
+    <Property Name="RegularExpression" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Pensum">
+    <Key>
+      <PropertyRef Name="PensumCode" />
+    </Key>
+    <Property Name="PensumCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GraduateProgram" Type="Int64" />
+    <Property Name="ModuleCode" Type="Int64" />
+    <NavigationProperty Name="GraduateProgram1" Relationship="QualificationsDBModel.FK_Pensum_GraduateProgram" FromRole="Pensum" ToRole="GraduateProgram" />
+    <NavigationProperty Name="Module" Relationship="QualificationsDBModel.FK_Pensum_Module" FromRole="Pensum" ToRole="Module" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="PersonId" />
+    </Key>
+    <Property Name="PersonId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IdentityCard" Type="Int64" Nullable="false" />
+    <Property Name="Sex" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="MobilePhone" Type="Int64" Nullable="false" />
+    <Property Name="HomePhone" Type="Int64" />
+    <Property Name="HomeAddress" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="Int64" />
+    <Property Name="Profession" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="VersionDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="StudentModule" Relationship="QualificationsDBModel.FK_StudentModule_Person" FromRole="Person" ToRole="StudentModule" />
+    <NavigationProperty Name="UserAccount" Relationship="QualificationsDBModel.FK_UserAccount_Person" FromRole="Person" ToRole="UserAccount" />
+  </EntityType>
+  <EntityType Name="Qualifications">
+    <Key>
+      <PropertyRef Name="QualificationCode" />
+    </Key>
+    <Property Name="QualificationCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Qualification" Type="Double" />
+    <Property Name="StudentModuleCode" Type="Int64" Nullable="false" />
+    <Property Name="EvaluationPlanCode" Type="Int64" />
+    <NavigationProperty Name="EvaluationPlan" Relationship="QualificationsDBModel.FK_Qualifications_EvaluationPlan" FromRole="Qualifications" ToRole="EvaluationPlan" />
+    <NavigationProperty Name="StudentModule" Relationship="QualificationsDBModel.FK_Qualifications_StudentModule" FromRole="Qualifications" ToRole="StudentModule" />
+  </EntityType>
+  <EntityType Name="StatusGlobalPlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="GlobalPlan" Relationship="QualificationsDBModel.FK_GlobalPlan_StatusGlobalPlan" FromRole="StatusGlobalPlan" ToRole="GlobalPlan" />
+  </EntityType>
+  <EntityType Name="StatusModule">
+    <Key>
+      <PropertyRef Name="StatusModuleCode" />
+    </Key>
+    <Property Name="StatusModuleCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Module" Relationship="QualificationsDBModel.FK_Module_StatusModule" FromRole="StatusModule" ToRole="Module" />
+  </EntityType>
+  <EntityType Name="StatusOpening">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="OpeningProgram" Relationship="QualificationsDBModel.FK_OpeningProgram_StatusOpening" FromRole="StatusOpening" ToRole="OpeningProgram" />
+  </EntityType>
+  <EntityType Name="StatusTheme">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="StatusThemeContent" Relationship="QualificationsDBModel.FK_StatusThemeContent_StatusTheme" FromRole="StatusTheme" ToRole="StatusThemeContent" />
+  </EntityType>
+  <EntityType Name="StatusThemeContent">
+    <Key>
+      <PropertyRef Name="StatusThemeContent1" />
+    </Key>
+    <Property Name="StatusThemeContent1" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContentCode" Type="Int64" />
+    <Property Name="StatusThemeCode" Type="Int64" />
+    <Property Name="Date" Type="DateTime" />
+    <NavigationProperty Name="ContentThematic" Relationship="QualificationsDBModel.FK_StatusThemeContent_ContentThematic" FromRole="StatusThemeContent" ToRole="ContentThematic" />
+    <NavigationProperty Name="StatusTheme" Relationship="QualificationsDBModel.FK_StatusThemeContent_StatusTheme" FromRole="StatusThemeContent" ToRole="StatusTheme" />
+  </EntityType>
+  <EntityType Name="StudentModule">
+    <Key>
+      <PropertyRef Name="StudentModuleCode" />
+    </Key>
+    <Property Name="StudentModuleCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeachingModuleCode" Type="Int64" />
+    <Property Name="Student" Type="Int64" />
+    <NavigationProperty Name="Person" Relationship="QualificationsDBModel.FK_StudentModule_Person" FromRole="StudentModule" ToRole="Person" />
+    <NavigationProperty Name="Qualifications" Relationship="QualificationsDBModel.FK_Qualifications_StudentModule" FromRole="StudentModule" ToRole="Qualifications" />
+    <NavigationProperty Name="TeachingModule" Relationship="QualificationsDBModel.FK_StudentModule_TeachingModule" FromRole="StudentModule" ToRole="TeachingModule" />
+    <NavigationProperty Name="Totals" Relationship="QualificationsDBModel.FK_Totals_StudentModule" FromRole="StudentModule" ToRole="Totals" />
+  </EntityType>
+  <EntityType Name="TeachingMethods">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MethodName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Justification" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="PlanGlobal" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="GlobalPlan" Relationship="QualificationsDBModel.FK_TeachingMethods_GlobalPlan" FromRole="TeachingMethods" ToRole="GlobalPlan" />
+  </EntityType>
+  <EntityType Name="TeachingModule">
+    <Key>
+      <PropertyRef Name="TeachingModuleCode" />
+    </Key>
+    <Property Name="TeachingModuleCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleCode" Type="Int64" Nullable="false" />
+    <Property Name="Teacher" Type="Int64" />
+    <Property Name="OpeningCode" Type="Int64" Nullable="false" />
+    <Property Name="ModuleStartDate" Type="DateTime" Nullable="false" />
+    <Property Name="ModuleEndDate" Type="DateTime" Nullable="false" />
+    <Property Name="Periods" Type="Int32" />
+    <NavigationProperty Name="GlobalPlan" Relationship="QualificationsDBModel.FK_GlobalPlan_TeachingModule" FromRole="TeachingModule" ToRole="GlobalPlan" />
+    <NavigationProperty Name="Module" Relationship="QualificationsDBModel.FK_TeachingModule_Module" FromRole="TeachingModule" ToRole="Module" />
+    <NavigationProperty Name="OpeningProgram" Relationship="QualificationsDBModel.FK_TeachingModule_OpeningProgram" FromRole="TeachingModule" ToRole="OpeningProgram" />
+    <NavigationProperty Name="StudentModule" Relationship="QualificationsDBModel.FK_StudentModule_TeachingModule" FromRole="TeachingModule" ToRole="StudentModule" />
+    <NavigationProperty Name="UserAccount" Relationship="QualificationsDBModel.FK_TeachingModule_UserAccount" FromRole="TeachingModule" ToRole="UserAccount" />
+  </EntityType>
+  <EntityType Name="Totals">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int64" Nullable="false" />
+    <Property Name="TotalPartial" Type="Double" />
+    <Property Name="TotalFinal" Type="Double" />
+    <Property Name="Total" Type="Double" />
+    <Property Name="Estado" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="StudentModule" Relationship="QualificationsDBModel.FK_Totals_StudentModule" FromRole="Totals" ToRole="StudentModule" />
+  </EntityType>
+  <EntityType Name="UserAccount">
+    <Key>
+      <PropertyRef Name="UserAccountId" />
+    </Key>
+    <Property Name="UserAccountId" Type="Int64" Nullable="false" />
+    <Property Name="Account" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="AccountStatus" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ListAccountStatus" Relationship="QualificationsDBModel.FK_UserAccount_ListAccountStatus" FromRole="UserAccount" ToRole="ListAccountStatus" />
+    <NavigationProperty Name="Person" Relationship="QualificationsDBModel.FK_UserAccount_Person" FromRole="UserAccount" ToRole="Person" />
+    <NavigationProperty Name="TeachingModule" Relationship="QualificationsDBModel.FK_TeachingModule_UserAccount" FromRole="UserAccount" ToRole="TeachingModule" />
+    <NavigationProperty Name="UserRole" Relationship="QualificationsDBModel.FK_UserRole_UserAccount" FromRole="UserAccount" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserRoleCode" />
+    </Key>
+    <Property Name="UserRoleCode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserAccountId" Type="Int64" Nullable="false" />
+    <Property Name="RoleCode" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ListRole" Relationship="QualificationsDBModel.FK_UserRole_ListRole" FromRole="UserRole" ToRole="ListRole" />
+    <NavigationProperty Name="UserAccount" Relationship="QualificationsDBModel.FK_UserRole_UserAccount" FromRole="UserRole" ToRole="UserAccount" />
+  </EntityType>
+  <EntityType Name="Version">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ProgramVersion" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="OpeningProgram" Relationship="QualificationsDBModel.FK_OpeningProgram_Version" FromRole="Version" ToRole="OpeningProgram" />
+  </EntityType>
+  <Association Name="FK_Bibliography_GlobalPlan">
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Bibliography" Type="QualificationsDBModel.Bibliography" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GlobalPlan">
+        <PropertyRef Name="GlobalPlanCode" />
+      </Principal>
+      <Dependent Role="Bibliography">
+        <PropertyRef Name="GlobalPlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Content_GlobalPlan">
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ContentThematic" Type="QualificationsDBModel.ContentThematic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GlobalPlan">
+        <PropertyRef Name="GlobalPlanCode" />
+      </Principal>
+      <Dependent Role="ContentThematic">
+        <PropertyRef Name="GlobalPlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StatusThemeContent_ContentThematic">
+    <End Role="ContentThematic" Type="QualificationsDBModel.ContentThematic" Multiplicity="0..1" />
+    <End Role="StatusThemeContent" Type="QualificationsDBModel.StatusThemeContent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContentThematic">
+        <PropertyRef Name="Code" />
+      </Principal>
+      <Dependent Role="StatusThemeContent">
+        <PropertyRef Name="ContentCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EndEvaluation_GlobalPlan">
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="1" />
+    <End Role="EndEvaluation" Type="QualificationsDBModel.EndEvaluation" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="GlobalPlan">
+        <PropertyRef Name="GlobalPlanCode" />
+      </Principal>
+      <Dependent Role="EndEvaluation">
+        <PropertyRef Name="Code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EvaluationForms_GlobalPlan">
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EvaluationForms" Type="QualificationsDBModel.EvaluationForms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GlobalPlan">
+        <PropertyRef Name="GlobalPlanCode" />
+      </Principal>
+      <Dependent Role="EvaluationForms">
+        <PropertyRef Name="GlobalPlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EvaluationPlan_GlobalPlan">
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="0..1" />
+    <End Role="EvaluationPlan" Type="QualificationsDBModel.EvaluationPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GlobalPlan">
+        <PropertyRef Name="GlobalPlanCode" />
+      </Principal>
+      <Dependent Role="EvaluationPlan">
+        <PropertyRef Name="GlobalPlanCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Qualifications_EvaluationPlan">
+    <End Role="EvaluationPlan" Type="QualificationsDBModel.EvaluationPlan" Multiplicity="0..1" />
+    <End Role="Qualifications" Type="QualificationsDBModel.Qualifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EvaluationPlan">
+        <PropertyRef Name="EvaluationCode" />
+      </Principal>
+      <Dependent Role="Qualifications">
+        <PropertyRef Name="EvaluationPlanCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GlobalPlan_StatusGlobalPlan">
+    <End Role="StatusGlobalPlan" Type="QualificationsDBModel.StatusGlobalPlan" Multiplicity="0..1" />
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusGlobalPlan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GlobalPlan">
+        <PropertyRef Name="Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GlobalPlan_TeachingModule">
+    <End Role="TeachingModule" Type="QualificationsDBModel.TeachingModule" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeachingModule">
+        <PropertyRef Name="TeachingModuleCode" />
+      </Principal>
+      <Dependent Role="GlobalPlan">
+        <PropertyRef Name="TeachingModuleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LearningMethods_GlobalPlan">
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LearningMethods" Type="QualificationsDBModel.LearningMethods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GlobalPlan">
+        <PropertyRef Name="GlobalPlanCode" />
+      </Principal>
+      <Dependent Role="LearningMethods">
+        <PropertyRef Name="PlanGlobal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ObjectivesSpecifics_GlobalPlan">
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ObjectivesSpecifics" Type="QualificationsDBModel.ObjectivesSpecifics" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GlobalPlan">
+        <PropertyRef Name="GlobalPlanCode" />
+      </Principal>
+      <Dependent Role="ObjectivesSpecifics">
+        <PropertyRef Name="GlobalPlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeachingMethods_GlobalPlan">
+    <End Role="GlobalPlan" Type="QualificationsDBModel.GlobalPlan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TeachingMethods" Type="QualificationsDBModel.TeachingMethods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GlobalPlan">
+        <PropertyRef Name="GlobalPlanCode" />
+      </Principal>
+      <Dependent Role="TeachingMethods">
+        <PropertyRef Name="PlanGlobal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GraduateProgram_ListTypeProgram">
+    <End Role="ListTypeProgram" Type="QualificationsDBModel.ListTypeProgram" Multiplicity="1" />
+    <End Role="GraduateProgram" Type="QualificationsDBModel.GraduateProgram" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListTypeProgram">
+        <PropertyRef Name="ListType" />
+      </Principal>
+      <Dependent Role="GraduateProgram">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OpeningProgram_GraduateProgram">
+    <End Role="GraduateProgram" Type="QualificationsDBModel.GraduateProgram" Multiplicity="1" />
+    <End Role="OpeningProgram" Type="QualificationsDBModel.OpeningProgram" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GraduateProgram">
+        <PropertyRef Name="GraduateProgramaId" />
+      </Principal>
+      <Dependent Role="OpeningProgram">
+        <PropertyRef Name="ProgramId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pensum_GraduateProgram">
+    <End Role="GraduateProgram" Type="QualificationsDBModel.GraduateProgram" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Pensum" Type="QualificationsDBModel.Pensum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GraduateProgram">
+        <PropertyRef Name="GraduateProgramaId" />
+      </Principal>
+      <Dependent Role="Pensum">
+        <PropertyRef Name="GraduateProgram" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserAccount_ListAccountStatus">
+    <End Role="ListAccountStatus" Type="QualificationsDBModel.ListAccountStatus" Multiplicity="1" />
+    <End Role="UserAccount" Type="QualificationsDBModel.UserAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListAccountStatus">
+        <PropertyRef Name="UserStatusCode" />
+      </Principal>
+      <Dependent Role="UserAccount">
+        <PropertyRef Name="AccountStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_ListRole">
+    <End Role="ListRole" Type="QualificationsDBModel.ListRole" Multiplicity="1" />
+    <End Role="UserRole" Type="QualificationsDBModel.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListRole">
+        <PropertyRef Name="RoleCode" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="RoleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Module_StatusModule">
+    <End Role="StatusModule" Type="QualificationsDBModel.StatusModule" Multiplicity="0..1" />
+    <End Role="Module" Type="QualificationsDBModel.Module" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusModule">
+        <PropertyRef Name="StatusModuleCode" />
+      </Principal>
+      <Dependent Role="Module">
+        <PropertyRef Name="Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pensum_Module">
+    <End Role="Module" Type="QualificationsDBModel.Module" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Pensum" Type="QualificationsDBModel.Pensum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Module">
+        <PropertyRef Name="ModuleCode" />
+      </Principal>
+      <Dependent Role="Pensum">
+        <PropertyRef Name="ModuleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeachingModule_Module">
+    <End Role="Module" Type="QualificationsDBModel.Module" Multiplicity="1" />
+    <End Role="TeachingModule" Type="QualificationsDBModel.TeachingModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Module">
+        <PropertyRef Name="ModuleCode" />
+      </Principal>
+      <Dependent Role="TeachingModule">
+        <PropertyRef Name="ModuleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OpeningProgram_StatusOpening">
+    <End Role="StatusOpening" Type="QualificationsDBModel.StatusOpening" Multiplicity="0..1" />
+    <End Role="OpeningProgram" Type="QualificationsDBModel.OpeningProgram" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusOpening">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OpeningProgram">
+        <PropertyRef Name="Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OpeningProgram_Version">
+    <End Role="Version" Type="QualificationsDBModel.Version" Multiplicity="1" />
+    <End Role="OpeningProgram" Type="QualificationsDBModel.OpeningProgram" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Version">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OpeningProgram">
+        <PropertyRef Name="Version" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeachingModule_OpeningProgram">
+    <End Role="OpeningProgram" Type="QualificationsDBModel.OpeningProgram" Multiplicity="1" />
+    <End Role="TeachingModule" Type="QualificationsDBModel.TeachingModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OpeningProgram">
+        <PropertyRef Name="OpeningCode" />
+      </Principal>
+      <Dependent Role="TeachingModule">
+        <PropertyRef Name="OpeningCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentModule_Person">
+    <End Role="Person" Type="QualificationsDBModel.Person" Multiplicity="0..1" />
+    <End Role="StudentModule" Type="QualificationsDBModel.StudentModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="PersonId" />
+      </Principal>
+      <Dependent Role="StudentModule">
+        <PropertyRef Name="Student" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserAccount_Person">
+    <End Role="Person" Type="QualificationsDBModel.Person" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserAccount" Type="QualificationsDBModel.UserAccount" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="PersonId" />
+      </Principal>
+      <Dependent Role="UserAccount">
+        <PropertyRef Name="UserAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Qualifications_StudentModule">
+    <End Role="StudentModule" Type="QualificationsDBModel.StudentModule" Multiplicity="1" />
+    <End Role="Qualifications" Type="QualificationsDBModel.Qualifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentModule">
+        <PropertyRef Name="StudentModuleCode" />
+      </Principal>
+      <Dependent Role="Qualifications">
+        <PropertyRef Name="StudentModuleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StatusThemeContent_StatusTheme">
+    <End Role="StatusTheme" Type="QualificationsDBModel.StatusTheme" Multiplicity="0..1" />
+    <End Role="StatusThemeContent" Type="QualificationsDBModel.StatusThemeContent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusTheme">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="StatusThemeContent">
+        <PropertyRef Name="StatusThemeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentModule_TeachingModule">
+    <End Role="TeachingModule" Type="QualificationsDBModel.TeachingModule" Multiplicity="0..1" />
+    <End Role="StudentModule" Type="QualificationsDBModel.StudentModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeachingModule">
+        <PropertyRef Name="TeachingModuleCode" />
+      </Principal>
+      <Dependent Role="StudentModule">
+        <PropertyRef Name="TeachingModuleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Totals_StudentModule">
+    <End Role="StudentModule" Type="QualificationsDBModel.StudentModule" Multiplicity="1" />
+    <End Role="Totals" Type="QualificationsDBModel.Totals" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="StudentModule">
+        <PropertyRef Name="StudentModuleCode" />
+      </Principal>
+      <Dependent Role="Totals">
+        <PropertyRef Name="Code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeachingModule_UserAccount">
+    <End Role="UserAccount" Type="QualificationsDBModel.UserAccount" Multiplicity="0..1" />
+    <End Role="TeachingModule" Type="QualificationsDBModel.TeachingModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserAccount">
+        <PropertyRef Name="UserAccountId" />
+      </Principal>
+      <Dependent Role="TeachingModule">
+        <PropertyRef Name="Teacher" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_UserAccount">
+    <End Role="UserAccount" Type="QualificationsDBModel.UserAccount" Multiplicity="1" />
+    <End Role="UserRole" Type="QualificationsDBModel.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserAccount">
+        <PropertyRef Name="UserAccountId" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="UserAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0535B56-2497-4CF3-9FDF-08ABEE79832D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QualificationsWebSystem</RootNamespace>
+    <AssemblyName>QualificationsWebSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CalificacionesEstudiante.aspx" />
+    <Content Include="DIPPMain.aspx" />
+    <Content Include="ElegirModulo.aspx" />
+    <Content Include="ElegirReportePlanGlobal.aspx" />
+    <Content Include="EliminarInscripción.aspx" />
+    <Content Include="ListaDocenteModulo.aspx" />
+    <Content Include="ListaDocentes.aspx" />
+    <Content Include="ListaEstudiantes.aspx" />
+    <Content Include="ListaInscripciones.aspx" />
+    <Content Include="ListaMódulosPlanilla.aspx" />
+    <Content Include="ListaPlanGlobal.aspx" />
+    <Content Include="ListaMódulos.aspx" />
+    <Content Include="ListaProgramaPost.aspx" />
+    <Content Include="ListaProgramasAbiertos.aspx" />
+    <Content Include="ListaProgramasCerrados.aspx" />
+    <Content Include="ListaUsuarios.aspx" />
+    <Content Include="MenuDocente.aspx" />
+    <Content Include="ModificarApertura.aspx" />
+    <Content Include="ModificarModulo.aspx" />
+    <Content Include="ModificarProgramaPostgrado.aspx" />
+    <Content Include="ModificarUsuario.aspx" />
+    <Content Include="ModificarUsuarioAcademico.aspx" />
+    <Content Include="Planilla General.aspx" />
+    <Content Include="PolíticaContraseñas.aspx" />
+    <Content Include="RegistrarAperturaPrograma.aspx" />
+    <Content Include="RegistrarAsignación.aspx" />
+    <Content Include="ElegirAvancePlanGlobal.aspx" />
+    <Content Include="RegistrarAvanceContenido.aspx" />
+    <Content Include="RegistrarBibliografía.aspx" />
+    <Content Include="ElegirModuloCalificacion.aspx" />
+    <Content Include="ListaModulosPorPrograma.aspx" />
+    <Content Include="RegistrarCalificación.aspx" />
+    <Content Include="RegistrarContenidoTematico.aspx" />
+    <Content Include="RegistrarDocenteModulo.aspx" />
+    <Content Include="RegistrarFormasEvaluacion.aspx" />
+    <Content Include="RegistrarFundamentacion.aspx" />
+    <Content Include="RegistrarInscripción.aspx" />
+    <Content Include="RegistrarMétodosAprendizaje.aspx" />
+    <Content Include="RegistrarMétodosEnseñanza.aspx" />
+    <Content Include="RegistrarMódulo.aspx" />
+    <Content Include="RegistrarObjetivosEspecificos.aspx" />
+    <Content Include="ElegirModuloPlanEvaluacion.aspx" />
+    <Content Include="RegistrarPlanEvaluaciones.aspx" />
+    <Content Include="RegistrarPlanGlobal.aspx" />
+    <Content Include="RegistrarProgramaPost.aspx" />
+    <Content Include="RegistrarUsuario.aspx" />
+    <Content Include="MenuAdministrador.aspx" />
+    <Content Include="MPTeacher.Master" />
+    <Content Include="MPStudent.Master" />
+    <Content Include="MPManagerDIPP.Master" />
+    <Content Include="MPAdministrator.Master" />
+    <None Include="Properties\DataSources\AcademicsServicesDIPP.Module.datasource" />
+    <None Include="Properties\DataSources\AcademicsServicesDIPP.Program.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AuthenticationService\AuthenticationService.wsdl" />
+    <None Include="Service References\AuthenticationService\AuthenticationService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuthenticationService\AuthenticationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EvaluationPlanService\EvaluationPlanAdminService.wsdl" />
+    <None Include="Service References\EvaluationPlanService\EvaluationPlanService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EvaluationPlanService\EvaluationPlanService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EvaluationPlanService\EvaluationPlanService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EvaluationPlanService\EvaluationPlanService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EvaluationPlanService\EvaluationPlanService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GlobalPlanService\GlobalPlanAdminService.wsdl" />
+    <None Include="Service References\GlobalPlanService\GlobalPlanService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GlobalPlanService\GlobalPlanService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GlobalPlanService\GlobalPlanService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GlobalPlanService\GlobalPlanService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GlobalPlanService\GlobalPlanService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InscriptionService\InscriptionAdminService.wsdl" />
+    <None Include="Service References\InscriptionService\InscriptionsAdminService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InscriptionService\InscriptionsAdminService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InscriptionService\InscriptionsAdminService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InscriptionService\InscriptionsAdminService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InscriptionService\InscriptionsAdminService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleAsignationService\ModuleAsigAdminService.wsdl" />
+    <None Include="Service References\ModuleAsignationService\ModuleAsingService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleAsignationService\ModuleAsingService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleAsignationService\ModuleAsingService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleAsignationService\ModuleAsingService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleAsignationService\ModuleAsingService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleService\ModuleAdminService.wsdl" />
+    <None Include="Service References\ModuleService\ModuleAdminService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleService\ModuleAdminService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleService\ModuleAdminService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleService\ModuleAdminService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModuleService\ModuleAdminService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OpeningService\OpeningProgramAdminService.wsdl" />
+    <None Include="Service References\OpeningService\OpeningProgramService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OpeningService\OpeningProgramService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OpeningService\OpeningProgramService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OpeningService\OpeningProgramService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OpeningService\OpeningProgramService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PolicyPasswordService\PolicyPasswordAdminService.wsdl" />
+    <None Include="Service References\PolicyPasswordService\PolicyPasswordService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PolicyPasswordService\PolicyPasswordService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PolicyPasswordService\PolicyPasswordService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PolicyPasswordService\PolicyPasswordService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PolicyPasswordService\PolicyPasswordService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProgramService\AcademicService.wsdl" />
+    <None Include="Service References\ProgramService\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProgramService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProgramService\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProgramService\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProgramService\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QualificationService\QualificationAdminService.wsdl" />
+    <None Include="Service References\QualificationService\QualificationService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QualificationService\QualificationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QualificationService\QualificationService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QualificationService\QualificationService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QualificationService\QualificationService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ReportingService\ReportingAdminService.wsdl" />
+    <None Include="Service References\ReportingService\ReportingsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentModuleService\StudentModuleAdminService.wsdl" />
+    <None Include="Service References\StudentModuleService\StudentModuleService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentModuleService\StudentModuleService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentModuleService\StudentModuleService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentModuleService\StudentModuleService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentModuleService\StudentModuleService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentService\StudentAdminService.wsdl" />
+    <None Include="Service References\StudentService\StudentsAdminService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TeacherModuleService\TeacherModuleAdminService.wsdl" />
+    <None Include="Service References\TeacherModuleService\TeacherModuleService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TeacherModuleService\TeacherModuleService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TeacherModuleService\TeacherModuleService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TeacherModuleService\TeacherModuleService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TeacherModuleService\TeacherModuleService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuthenticationService\AuthenticationService.disco" />
+    <None Include="Service References\AuthenticationService\configuration91.svcinfo" />
+    <None Include="Service References\AuthenticationService\configuration.svcinfo" />
+    <None Include="Service References\AuthenticationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TeachersService\TeacherAdminService.wsdl" />
+    <None Include="Service References\TeachersService\TeachersAdminService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserAccountAdminService\UserAccountAdminService.wsdl" />
+    <None Include="Service References\UserAccountAdminService\UserAccountService.disco" />
+    <None Include="Service References\UserAccountAdminService\configuration91.svcinfo" />
+    <None Include="Service References\UserAccountAdminService\configuration.svcinfo" />
+    <None Include="Service References\UserAccountAdminService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\EvaluationPlanService\EvaluationPlanService.disco" />
+    <None Include="Service References\EvaluationPlanService\configuration91.svcinfo" />
+    <None Include="Service References\EvaluationPlanService\configuration.svcinfo" />
+    <None Include="Service References\EvaluationPlanService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\GlobalPlanService\GlobalPlanService.disco" />
+    <None Include="Service References\GlobalPlanService\configuration91.svcinfo" />
+    <None Include="Service References\GlobalPlanService\configuration.svcinfo" />
+    <None Include="Service References\GlobalPlanService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\InscriptionService\InscriptionsAdminService.disco" />
+    <None Include="Service References\InscriptionService\configuration91.svcinfo" />
+    <None Include="Service References\InscriptionService\configuration.svcinfo" />
+    <None Include="Service References\InscriptionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ModuleAsignationService\ModuleAsingService.disco" />
+    <None Include="Service References\ModuleAsignationService\configuration91.svcinfo" />
+    <None Include="Service References\ModuleAsignationService\configuration.svcinfo" />
+    <None Include="Service References\ModuleAsignationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ModuleService\ModuleAdminService.disco" />
+    <None Include="Service References\ModuleService\configuration91.svcinfo" />
+    <None Include="Service References\ModuleService\configuration.svcinfo" />
+    <None Include="Service References\ModuleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\OpeningService\OpeningProgramService.disco" />
+    <None Include="Service References\OpeningService\configuration91.svcinfo" />
+    <None Include="Service References\OpeningService\configuration.svcinfo" />
+    <None Include="Service References\OpeningService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PolicyPasswordService\PolicyPasswordService.disco" />
+    <None Include="Service References\PolicyPasswordService\configuration91.svcinfo" />
+    <None Include="Service References\PolicyPasswordService\configuration.svcinfo" />
+    <None Include="Service References\PolicyPasswordService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ProgramService\Service.disco" />
+    <None Include="Service References\ProgramService\configuration91.svcinfo" />
+    <None Include="Service References\ProgramService\configuration.svcinfo" />
+    <None Include="Service References\ProgramService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\QualificationService\QualificationService.disco" />
+    <None Include="Service References\QualificationService\configuration91.svcinfo" />
+    <None Include="Service References\QualificationService\configuration.svcinfo" />
+    <None Include="Service References\QualificationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ReportingService\ReportingsService.disco" />
+    <None Include="Service References\ReportingService\configuration91.svcinfo" />
+    <None Include="Service References\ReportingService\configuration.svcinfo" />
+    <None Include="Service References\ReportingService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\StudentModuleService\StudentModuleService.disco" />
+    <None Include="Service References\StudentModuleService\configuration91.svcinfo" />
+    <None Include="Service References\StudentModuleService\configuration.svcinfo" />
+    <None Include="Service References\StudentModuleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\StudentService\StudentsAdminService.disco" />
+    <None Include="Service References\StudentService\configuration91.svcinfo" />
+    <None Include="Service References\StudentService\configuration.svcinfo" />
+    <None Include="Service References\StudentService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TeacherModuleService\TeacherModuleService.disco" />
+    <None Include="Service References\TeacherModuleService\configuration91.svcinfo" />
+    <None Include="Service References\TeacherModuleService\configuration.svcinfo" />
+    <None Include="Service References\TeacherModuleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TeachersService\TeachersAdminService.disco" />
+    <None Include="Service References\TeachersService\configuration91.svcinfo" />
+    <None Include="Service References\TeachersService\configuration.svcinfo" />
+    <None Include="Service References\TeachersService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Styles\About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <None Include="Properties\DataSources\AcademicsServicesDIPP.GraduateProgram.datasource" />
+    <Content Include="Authentication.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\UserAccountAdminService\UserAccountService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserAccountAdminService\UserAccountService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserAccountAdminService\UserAccountService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserAccountAdminService\UserAccountService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserAccountAdminService\UserAccountService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalificacionesEstudiante.aspx.cs">
+      <DependentUpon>CalificacionesEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalificacionesEstudiante.aspx.designer.cs">
+      <DependentUpon>CalificacionesEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DIPPMain.aspx.cs">
+      <DependentUpon>DIPPMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DIPPMain.aspx.designer.cs">
+      <DependentUpon>DIPPMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirModulo.aspx.cs">
+      <DependentUpon>ElegirModulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElegirModulo.aspx.designer.cs">
+      <DependentUpon>ElegirModulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirReportePlanGlobal.aspx.cs">
+      <DependentUpon>ElegirReportePlanGlobal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElegirReportePlanGlobal.aspx.designer.cs">
+      <DependentUpon>ElegirReportePlanGlobal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarInscripción.aspx.cs">
+      <DependentUpon>EliminarInscripción.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EliminarInscripción.aspx.designer.cs">
+      <DependentUpon>EliminarInscripción.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Herramientas.cs" />
+    <Compile Include="ListaDocenteModulo.aspx.cs">
+      <DependentUpon>ListaDocenteModulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaDocenteModulo.aspx.designer.cs">
+      <DependentUpon>ListaDocenteModulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDocentes.aspx.cs">
+      <DependentUpon>ListaDocentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaDocentes.aspx.designer.cs">
+      <DependentUpon>ListaDocentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEstudiantes.aspx.cs">
+      <DependentUpon>ListaEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaEstudiantes.aspx.designer.cs">
+      <DependentUpon>ListaEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaInscripciones.aspx.cs">
+      <DependentUpon>ListaInscripciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaInscripciones.aspx.designer.cs">
+      <DependentUpon>ListaInscripciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaMódulosPlanilla.aspx.cs">
+      <DependentUpon>ListaMódulosPlanilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaMódulosPlanilla.aspx.designer.cs">
+      <DependentUpon>ListaMódulosPlanilla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPlanGlobal.aspx.cs">
+      <DependentUpon>ListaPlanGlobal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaPlanGlobal.aspx.designer.cs">
+      <DependentUpon>ListaPlanGlobal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaMódulos.aspx.cs">
+      <DependentUpon>ListaMódulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaMódulos.aspx.designer.cs">
+      <DependentUpon>ListaMódulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProgramaPost.aspx.cs">
+      <DependentUpon>ListaProgramaPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaProgramaPost.aspx.designer.cs">
+      <DependentUpon>ListaProgramaPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProgramasAbiertos.aspx.cs">
+      <DependentUpon>ListaProgramasAbiertos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaProgramasAbiertos.aspx.designer.cs">
+      <DependentUpon>ListaProgramasAbiertos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProgramasCerrados.aspx.cs">
+      <DependentUpon>ListaProgramasCerrados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaProgramasCerrados.aspx.designer.cs">
+      <DependentUpon>ListaProgramasCerrados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaUsuarios.aspx.cs">
+      <DependentUpon>ListaUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaUsuarios.aspx.designer.cs">
+      <DependentUpon>ListaUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDocente.aspx.cs">
+      <DependentUpon>MenuDocente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuDocente.aspx.designer.cs">
+      <DependentUpon>MenuDocente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarApertura.aspx.cs">
+      <DependentUpon>ModificarApertura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarApertura.aspx.designer.cs">
+      <DependentUpon>ModificarApertura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarModulo.aspx.cs">
+      <DependentUpon>ModificarModulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarModulo.aspx.designer.cs">
+      <DependentUpon>ModificarModulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarProgramaPostgrado.aspx.cs">
+      <DependentUpon>ModificarProgramaPostgrado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarProgramaPostgrado.aspx.designer.cs">
+      <DependentUpon>ModificarProgramaPostgrado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuario.aspx.cs">
+      <DependentUpon>ModificarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuario.aspx.designer.cs">
+      <DependentUpon>ModificarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuarioAcademico.aspx.cs">
+      <DependentUpon>ModificarUsuarioAcademico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuarioAcademico.aspx.designer.cs">
+      <DependentUpon>ModificarUsuarioAcademico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MPAdministrator.Master.cs">
+      <DependentUpon>MPAdministrator.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MPAdministrator.Master.designer.cs">
+      <DependentUpon>MPAdministrator.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MPManagerDIPP.Master.cs">
+      <DependentUpon>MPManagerDIPP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MPManagerDIPP.Master.designer.cs">
+      <DependentUpon>MPManagerDIPP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MPStudent.Master.cs">
+      <DependentUpon>MPStudent.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MPStudent.Master.designer.cs">
+      <DependentUpon>MPStudent.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MPTeacher.Master.cs">
+      <DependentUpon>MPTeacher.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MPTeacher.Master.designer.cs">
+      <DependentUpon>MPTeacher.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Planilla General.aspx.cs">
+      <DependentUpon>Planilla General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planilla General.aspx.designer.cs">
+      <DependentUpon>Planilla General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PolíticaContraseñas.aspx.cs">
+      <DependentUpon>PolíticaContraseñas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PolíticaContraseñas.aspx.designer.cs">
+      <DependentUpon>PolíticaContraseñas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarAperturaPrograma.aspx.cs">
+      <DependentUpon>RegistrarAperturaPrograma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarAperturaPrograma.aspx.designer.cs">
+      <DependentUpon>RegistrarAperturaPrograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarAsignación.aspx.cs">
+      <DependentUpon>RegistrarAsignación.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarAsignación.aspx.designer.cs">
+      <DependentUpon>RegistrarAsignación.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirAvancePlanGlobal.aspx.cs">
+      <DependentUpon>ElegirAvancePlanGlobal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElegirAvancePlanGlobal.aspx.designer.cs">
+      <DependentUpon>ElegirAvancePlanGlobal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarAvanceContenido.aspx.cs">
+      <DependentUpon>RegistrarAvanceContenido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarAvanceContenido.aspx.designer.cs">
+      <DependentUpon>RegistrarAvanceContenido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarBibliografía.aspx.cs">
+      <DependentUpon>RegistrarBibliografía.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarBibliografía.aspx.designer.cs">
+      <DependentUpon>RegistrarBibliografía.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirModuloCalificacion.aspx.cs">
+      <DependentUpon>ElegirModuloCalificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElegirModuloCalificacion.aspx.designer.cs">
+      <DependentUpon>ElegirModuloCalificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaModulosPorPrograma.aspx.cs">
+      <DependentUpon>ListaModulosPorPrograma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaModulosPorPrograma.aspx.designer.cs">
+      <DependentUpon>ListaModulosPorPrograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCalificación.aspx.cs">
+      <DependentUpon>RegistrarCalificación.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarCalificación.aspx.designer.cs">
+      <DependentUpon>RegistrarCalificación.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarContenidoTematico.aspx.cs">
+      <DependentUpon>RegistrarContenidoTematico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarContenidoTematico.aspx.designer.cs">
+      <DependentUpon>RegistrarContenidoTematico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarDocenteModulo.aspx.cs">
+      <DependentUpon>RegistrarDocenteModulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarDocenteModulo.aspx.designer.cs">
+      <DependentUpon>RegistrarDocenteModulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarFormasEvaluacion.aspx.cs">
+      <DependentUpon>RegistrarFormasEvaluacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarFormasEvaluacion.aspx.designer.cs">
+      <DependentUpon>RegistrarFormasEvaluacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarFundamentacion.aspx.cs">
+      <DependentUpon>RegistrarFundamentacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarFundamentacion.aspx.designer.cs">
+      <DependentUpon>RegistrarFundamentacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarInscripción.aspx.cs">
+      <DependentUpon>RegistrarInscripción.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarInscripción.aspx.designer.cs">
+      <DependentUpon>RegistrarInscripción.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarMétodosAprendizaje.aspx.cs">
+      <DependentUpon>RegistrarMétodosAprendizaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarMétodosAprendizaje.aspx.designer.cs">
+      <DependentUpon>RegistrarMétodosAprendizaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarMétodosEnseñanza.aspx.cs">
+      <DependentUpon>RegistrarMétodosEnseñanza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarMétodosEnseñanza.aspx.designer.cs">
+      <DependentUpon>RegistrarMétodosEnseñanza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarMódulo.aspx.cs">
+      <DependentUpon>RegistrarMódulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarMódulo.aspx.designer.cs">
+      <DependentUpon>RegistrarMódulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarObjetivosEspecificos.aspx.cs">
+      <DependentUpon>RegistrarObjetivosEspecificos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarObjetivosEspecificos.aspx.designer.cs">
+      <DependentUpon>RegistrarObjetivosEspecificos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirModuloPlanEvaluacion.aspx.cs">
+      <DependentUpon>ElegirModuloPlanEvaluacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElegirModuloPlanEvaluacion.aspx.designer.cs">
+      <DependentUpon>ElegirModuloPlanEvaluacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarPlanEvaluaciones.aspx.cs">
+      <DependentUpon>RegistrarPlanEvaluaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarPlanEvaluaciones.aspx.designer.cs">
+      <DependentUpon>RegistrarPlanEvaluaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarPlanGlobal.aspx.cs">
+      <DependentUpon>RegistrarPlanGlobal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarPlanGlobal.aspx.designer.cs">
+      <DependentUpon>RegistrarPlanGlobal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarProgramaPost.aspx.cs">
+      <DependentUpon>RegistrarProgramaPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarProgramaPost.aspx.designer.cs">
+      <DependentUpon>RegistrarProgramaPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarUsuario.aspx.cs">
+      <DependentUpon>RegistrarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarUsuario.aspx.designer.cs">
+      <DependentUpon>RegistrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdministrador.aspx.cs">
+      <DependentUpon>MenuAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuAdministrador.aspx.designer.cs">
+      <DependentUpon>MenuAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AuthenticationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EvaluationPlanService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\GlobalPlanService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\InscriptionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ModuleAsignationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ModuleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OpeningService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PolicyPasswordService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProgramService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\QualificationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ReportingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\StudentModuleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\StudentService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TeacherModuleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TeachersService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UserAccountAdminService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Styles\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Styles\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication.aspx.cs">
+      <DependentUpon>Authentication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authentication.aspx.designer.cs">
+      <DependentUpon>Authentication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AuthenticationService\" />
+    <WCFMetadataStorage Include="Service References\EvaluationPlanService\" />
+    <WCFMetadataStorage Include="Service References\GlobalPlanService\" />
+    <WCFMetadataStorage Include="Service References\InscriptionService\" />
+    <WCFMetadataStorage Include="Service References\ModuleAsignationService\" />
+    <WCFMetadataStorage Include="Service References\ModuleService\" />
+    <WCFMetadataStorage Include="Service References\OpeningService\" />
+    <WCFMetadataStorage Include="Service References\PolicyPasswordService\" />
+    <WCFMetadataStorage Include="Service References\ProgramService\" />
+    <WCFMetadataStorage Include="Service References\QualificationService\" />
+    <WCFMetadataStorage Include="Service References\ReportingService\" />
+    <WCFMetadataStorage Include="Service References\StudentModuleService\" />
+    <WCFMetadataStorage Include="Service References\StudentService\" />
+    <WCFMetadataStorage Include="Service References\TeacherModuleService\" />
+    <WCFMetadataStorage Include="Service References\TeachersService\" />
+    <WCFMetadataStorage Include="Service References\UserAccountAdminService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcademicsServicesDIPP\AcademicsServicesDIPP.csproj">
+      <Project>{D12827DA-5C36-438D-8BD7-EB634FD99393}</Project>
+      <Name>AcademicsServicesDIPP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28415</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

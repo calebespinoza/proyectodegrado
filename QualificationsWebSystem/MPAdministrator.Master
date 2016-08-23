@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPAdministrator.master.cs" Inherits="QualificationsWebSystem.MPAdministrator" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            height: 43px;
+            width: 1250px;
+            background-color: #1E6473;
+        }
+        .style3
+        {
+            width: 1250px;
+            text-align: left;
+        }
+        .style4
+        {
+            width: 1250px;
+            background-color: #1E6473;
+        }
+        .style5
+        {
+            height: 138px;
+            width: 1250px;
+            text-align: center;
+        }
+        .cabe
+        {
+            width: 1288px;
+            height: 17px;
+        }
+        #form1
+        {
+            width: 1287px;
+        }
+        </style>
+</head>
+<body bgcolor="#85b7cf" 
+    
+    
+    style="height: 374px; width: 1284px; margin-bottom: 15px; background-color: #85B7CF">
+    <form id="form1" runat="server">
+    
+    <div  class= "cabe">
+        
+        </div>
+    <table style="width:108%; margin-right: 203px; height: 346px; background-color: #334455;">
+        <tr>
+            <td class="style3" bgcolor="#85B7CF">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" ForeColor="White" 
+                    Text="ESCUELA DE COMANDO Y ESTADO MAYOR" 
+                    style="color: #000000; font-size: medium; text-align: left; font-weight: 700;"></asp:Label>
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label2" runat="server" style="color: #000000" 
+                    Text="DIVISIÓN DE PROGRAMAS DE POSTGRADO"></asp:Label>
+                <br />
+                <asp:Label ID="lbl_welcome" runat="server" 
+                    style="font-weight: 700; color: #FFFFFF; text-align: left"></asp:Label>
+                <br />
+                <br />
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                    style="color: #000066">Cerrar Sesión</asp:LinkButton>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" ForeColor="White" 
+                    style="color: #FFFFFF; font-weight: 700">
+                    <Items>
+                        <asp:MenuItem Text="Administrar Usuarios" Value="Administrar Usuarios">
+                            <asp:MenuItem Text="Registrar Cuenta" Value="Registrar Cuenta" 
+                                NavigateUrl="~/RegistrarUsuario.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Lista de Cuentas" Value="Lista de Cuentas" 
+                                NavigateUrl="~/ListaUsuarios.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ListaDocentes.aspx" Text="Lista de Docentes" 
+                                Value="Lista de Docentes"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ListaEstudiantes.aspx" Text="Lista de Estudiantes" 
+                                Value="Lista de Estudiantes"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Políticas de Contraseñas" Value="Políticas de Contraseñas">
+                            <asp:MenuItem Text="Configurar Políticas" Value="Configurar Políticas" 
+                                NavigateUrl="~/PolíticaContraseñas.aspx">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Administrar Programas" Value="Administrar Programas">
+                            <asp:MenuItem Text="Registrar Programa Postgrado" 
+                                Value="Registrar Programa Postgrado" 
+                                NavigateUrl="~/RegistrarProgramaPost.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Lista de Programas" 
+                                Value="Lista de Programas" NavigateUrl="~/ListaProgramaPost.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Administrar Módulos" Value="Administrar Módulos">
+                            <asp:MenuItem Text="Registrar Módulo" Value="Registrar Módulo" 
+                                NavigateUrl="~/RegistrarMódulo.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Lista Módulos" Value="Lista Módulos" 
+                                NavigateUrl="~/ListaMódulos.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Lista Módulos por Programa" 
+                                Value="Lista Módulos por Programa" 
+                                NavigateUrl="~/ListaModulosPorPrograma.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Aperturar Programas" Value="Aperturar Programas">
+                            <asp:MenuItem Text="Registrar Apertura" Value="Registrar Apertura" 
+                                NavigateUrl="~/RegistrarAperturaPrograma.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Lista de Programas Abiertos" 
+                                Value="Lista de Programas Abiertos" 
+                                NavigateUrl="~/ListaProgramasAbiertos.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Lista de Programas Cerrados" 
+                                Value="Lista de Programas Cerrados" 
+                                NavigateUrl="~/ListaProgramasCerrados.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Docente - Módulo" Value="Docente - Módulo">
+                            <asp:MenuItem Text="Asignar Docente a Módulo" Value="Asignar Docente a Módulo" 
+                                NavigateUrl="~/RegistrarDocenteModulo.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Lista de Asignaciones" Value="Lista de Asignaciones" 
+                                NavigateUrl="~/ListaDocenteModulo.aspx">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Administrar Inscripciones" 
+                            Value="Administrar Inscripciones">
+                            <asp:MenuItem Text="Registrar Inscripción" Value="Registrar Inscripción" 
+                                NavigateUrl="~/ListaEstudiantes.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Lista de Inscripciones" Value="Lista de Inscripciones" 
+                                NavigateUrl="~/ListaInscripciones.aspx">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr><td bgcolor="#85B7CF" class="style5">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td></tr>
+        <tr>
+            <td class="style4">
+                <br />
+                <br />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

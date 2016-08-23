@@ -1,0 +1,77 @@
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+C:\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+C:\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+C:\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+C:\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+C:\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+C:\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+C:\WCFServicesAcademicsDIPP V3.1\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb
+C:\WCFServicesAcademicsDIPP V3.2\QualificationsWebSystem\bin\QualificationsWebSystem.dll
+C:\WCFServicesAcademicsDIPP V3.2\QualificationsWebSystem\bin\QualificationsWebSystem.pdb
+C:\WCFServicesAcademicsDIPP V3.2\QualificationsWebSystem\bin\AcademicsServicesDIPP.dll
+C:\WCFServicesAcademicsDIPP V3.2\QualificationsWebSystem\bin\AcademicsServicesDIPP.pdb
+C:\WCFServicesAcademicsDIPP V3.2\QualificationsWebSystem\obj\Debug\ResolveAssemblyReference.cache
+C:\WCFServicesAcademicsDIPP V3.2\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.dll
+C:\WCFServicesAcademicsDIPP V3.2\QualificationsWebSystem\obj\Debug\QualificationsWebSystem.pdb

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a64670de-5d07-4d3b-a7ec-a5510a480f0e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/OpeningProgramService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OpeningProgramService.xsd" MetadataType="Schema" ID="6f35f55f-5832-4078-8089-cf5209eb6657" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/OpeningProgramService.svc?xsd=xsd3" />
+    <MetadataFile FileName="OpeningProgramService1.xsd" MetadataType="Schema" ID="6db997db-6536-413c-90c4-bcb2f0d9a6d6" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/OpeningProgramService.svc?xsd=xsd2" />
+    <MetadataFile FileName="OpeningProgramService2.xsd" MetadataType="Schema" ID="89007d64-721b-4d48-adb6-d41b94db3427" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/OpeningProgramService.svc?xsd=xsd4" />
+    <MetadataFile FileName="OpeningProgramService3.xsd" MetadataType="Schema" ID="a309c50f-a659-46a9-a49d-c9de282d6a60" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/OpeningProgramService.svc?xsd=xsd0" />
+    <MetadataFile FileName="OpeningProgramService4.xsd" MetadataType="Schema" ID="e13128e0-8151-4eca-aa04-62df8d496765" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/OpeningProgramService.svc?xsd=xsd1" />
+    <MetadataFile FileName="OpeningProgramService.disco" MetadataType="Disco" ID="0eee200a-0d97-4f4c-ba47-f6f3a6effdf1" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/OpeningProgramService.svc?disco" />
+    <MetadataFile FileName="OpeningProgramAdminService.wsdl" MetadataType="Wsdl" ID="03796cfb-9f0e-406a-9f32-41a61525129c" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/OpeningProgramService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

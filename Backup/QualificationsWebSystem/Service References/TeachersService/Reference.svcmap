@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b440ebc7-28db-42f8-8bdf-f208d62c6608" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/TeachersAdminService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TeachersAdminService.xsd" MetadataType="Schema" ID="6cf93150-c650-4b7a-8d0b-4deec885be20" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/TeachersAdminService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TeacherAdminService.wsdl" MetadataType="Wsdl" ID="23e637bc-fb82-41a4-ac30-77ca0a15db3b" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/TeachersAdminService.svc?wsdl" />
+    <MetadataFile FileName="TeachersAdminService.disco" MetadataType="Disco" ID="5fc40a4a-fe8b-41d1-b210-b945f3305450" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/TeachersAdminService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

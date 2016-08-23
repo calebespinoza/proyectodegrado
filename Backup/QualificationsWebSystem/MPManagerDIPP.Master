@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPManagerDIPP.master.cs" Inherits="QualificationsWebSystem.MPManagerDIPP" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style5
+        {
+            text-align: center;
+            height: 208px;
+        }
+        .style6
+        {
+            height: 120px;
+        }
+        .cabe
+        {
+            width: 1308px;
+        }
+        .style3
+        {
+            width: 1139px;
+            text-align: left;
+        }
+        .style2
+        {
+            height: 43px;
+            width: 1282px;
+            background-color: #1E6473;
+        }
+        .style1
+        {
+            height: 43px;
+            width: 17px;
+        }
+        .style4
+        {
+            width: 1282px;
+            background-color: #1E6473;
+        }
+    </style>
+</head>
+<body bgcolor="#334455" style="height: 347px; margin-bottom: 15px">
+    <form id="form1" runat="server">
+    
+    <div  class= "cabe">
+        
+        </div>
+    <table style="width:128%; margin-right: 203px; height: 325px; background-color: #334455;">
+        <tr>
+            <td class="style3" colspan="2">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" ForeColor="White" 
+                    Text="ESCUELA DE COMANDO Y ESTADO MAYOR" 
+                    style="color: #FFFFFF; font-size: medium; font-weight: 700; text-align: left;"></asp:Label>
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label2" runat="server" style="color: #FFFFFF" 
+                    Text="DIVISIÓN DE PROGRAMAS DE POSTGRADO"></asp:Label>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+              
+<asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" ForeColor="White" 
+                    style="color: #FFFFFF; font-weight: 700; text-align: left;">
+                    <Items>
+                        <asp:MenuItem Text="Administrar Plan Global" Value="Administrar Usuarios">
+                            <asp:MenuItem Text="Registrar Plan Global" Value="Registrar Cuenta"></asp:MenuItem>
+                            <asp:MenuItem Text="Modificar Plan Global" Value="Modificar Cuenta"></asp:MenuItem>
+                            <asp:MenuItem Text="Buscar Plan Global" Value="Buscar Cuenta"></asp:MenuItem>
+                            <asp:MenuItem Text="Eliminar Plann Global" Value="Eliminar Cuenta"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Plan de Evaluaciones" Value="Plan de Evaluaciones">
+                            <asp:MenuItem Text="Registrar Plan Evaluaciones" 
+                                Value="Registrar Plan Evaluaciones"></asp:MenuItem>
+                            <asp:MenuItem Text="Buscar Plan Evaluaciones" 
+                                Value="Buscar Plan Evaluaciones"></asp:MenuItem>
+                            <asp:MenuItem Text="Modificar Plan Evaluaciones" 
+                                Value="Modificar Plan Evaluaciones"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Administrar Calificaciones" 
+                            Value="Administrar Calificaciones">
+                            <asp:MenuItem Text="Registrar Calificación" Value="Registrar Calificación"></asp:MenuItem>
+                            <asp:MenuItem Text="Buscar Calificación" Value="Buscar Calificación"></asp:MenuItem>
+                            <asp:MenuItem Text="Modificar Calificación" Value="Modificar Calificación"></asp:MenuItem>
+                        </asp:MenuItem>
+
+                    </Items>
+                </asp:Menu>
+            </td>
+            <td class="style1">
+            </td>
+        </tr>
+        <tr><td class="style5">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+            <p style="height: 194px">
+                asdasdasdasdas</p>
+        
+        </asp:ContentPlaceHolder>
+            </td></tr>
+        <tr>
+            <td class="style4">
+                <br />
+            </td>
+            <td class="style6">
+                </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+C:\Users\hp\documents\visual studio 2010\Projects\WCFServicesAcademicsDIPP\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V0.2\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.0\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V1.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V2.0\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.0\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+D:\CALEB\EMI\MARCO PRÁCTICO\100%\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+C:\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+C:\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+C:\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+C:\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+C:\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+C:\WCFServicesAcademicsDIPP V3.1\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb
+C:\WCFServicesAcademicsDIPP V3.2\AcademicsServicesDIPP\obj\Debug\ResolveAssemblyReference.cache
+C:\WCFServicesAcademicsDIPP V3.2\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll.config
+C:\WCFServicesAcademicsDIPP V3.2\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.dll
+C:\WCFServicesAcademicsDIPP V3.2\AcademicsServicesDIPP\bin\Debug\AcademicsServicesDIPP.pdb
+C:\WCFServicesAcademicsDIPP V3.2\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.dll
+C:\WCFServicesAcademicsDIPP V3.2\AcademicsServicesDIPP\obj\Debug\AcademicsServicesDIPP.pdb

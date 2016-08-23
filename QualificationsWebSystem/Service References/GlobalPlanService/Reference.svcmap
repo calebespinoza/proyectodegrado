@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f168c745-3162-4037-8f26-b22f1734ce0e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/GlobalPlanService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GlobalPlanService.xsd" MetadataType="Schema" ID="ec2a6761-1642-4a8f-b7e7-cbcf6b4c2ffe" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/GlobalPlanService.svc?xsd=xsd3" />
+    <MetadataFile FileName="GlobalPlanService1.xsd" MetadataType="Schema" ID="ae06e14d-f667-4e2f-bdad-a561dbaa1717" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/GlobalPlanService.svc?xsd=xsd4" />
+    <MetadataFile FileName="GlobalPlanService.disco" MetadataType="Disco" ID="171b7ea8-e734-4c97-b26e-a3e63df365f8" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/GlobalPlanService.svc?disco" />
+    <MetadataFile FileName="GlobalPlanService2.xsd" MetadataType="Schema" ID="a6348ab5-7ea8-4f75-a8a9-bb4fc6357df6" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/GlobalPlanService.svc?xsd=xsd0" />
+    <MetadataFile FileName="GlobalPlanAdminService.wsdl" MetadataType="Wsdl" ID="2d3dfc5a-a291-4a16-83cf-999ad7c58a7a" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/GlobalPlanService.svc?wsdl" />
+    <MetadataFile FileName="GlobalPlanService3.xsd" MetadataType="Schema" ID="8ee48455-b5bb-4092-9934-edbfe5ed8f0a" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/GlobalPlanService.svc?xsd=xsd1" />
+    <MetadataFile FileName="GlobalPlanService4.xsd" MetadataType="Schema" ID="b36ecf81-859c-4073-8ed3-a6571f879673" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/GlobalPlanService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

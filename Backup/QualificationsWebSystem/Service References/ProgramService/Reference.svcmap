@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d0212deb-83d0-459f-9c6b-27ef74f12bd9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="f0ee9cac-5a60-4857-ae50-3cf54a62771c" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/Service.svc?disco" />
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="ef9d7b55-b998-4be9-8fe1-f02a2b4fedfe" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="22b314b9-e5ea-41bc-8744-6e822119b473" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/Service.svc?xsd=xsd3" />
+    <MetadataFile FileName="AcademicService.wsdl" MetadataType="Wsdl" ID="dd30e274-c39d-4125-b6bd-fe647605d55a" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/Service.svc?wsdl" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="cf340ecb-bcd0-469b-8039-6012e4bc263b" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service3.xsd" MetadataType="Schema" ID="4b48c135-2a75-42ba-8b99-05c9cfc82689" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service4.xsd" MetadataType="Schema" ID="119911b9-9854-4ef2-881b-d1139a209f80" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/Service.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

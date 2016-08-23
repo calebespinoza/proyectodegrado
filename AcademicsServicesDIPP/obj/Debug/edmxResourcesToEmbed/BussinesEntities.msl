@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QualificationsDBModelStoreContainer" CdmEntityContainer="QualificationsDBEntities">
+    <EntitySetMapping Name="Bibliography">
+      <EntityTypeMapping TypeName="QualificationsDBModel.Bibliography">
+        <MappingFragment StoreEntitySet="Bibliography">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Editorial" ColumnName="Editorial" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="GlobalPlan" ColumnName="GlobalPlan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentThematic">
+      <EntityTypeMapping TypeName="QualificationsDBModel.ContentThematic">
+        <MappingFragment StoreEntitySet="ContentThematic">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Theme" ColumnName="Theme" />
+          <ScalarProperty Name="InstrumentalObjectives" ColumnName="InstrumentalObjectives" />
+          <ScalarProperty Name="InvestigationThemes" ColumnName="InvestigationThemes" />
+          <ScalarProperty Name="PersonalWork" ColumnName="PersonalWork" />
+          <ScalarProperty Name="GroupWork" ColumnName="GroupWork" />
+          <ScalarProperty Name="GlobalPlan" ColumnName="GlobalPlan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EndEvaluation">
+      <EntityTypeMapping TypeName="QualificationsDBModel.EndEvaluation">
+        <MappingFragment StoreEntitySet="EndEvaluation">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Form" ColumnName="Form" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Consideration" ColumnName="Consideration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationForms">
+      <EntityTypeMapping TypeName="QualificationsDBModel.EvaluationForms">
+        <MappingFragment StoreEntitySet="EvaluationForms">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="EvaluationForm" ColumnName="EvaluationForm" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Justification" ColumnName="Justification" />
+          <ScalarProperty Name="GlobalPlan" ColumnName="GlobalPlan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationPlan">
+      <EntityTypeMapping TypeName="QualificationsDBModel.EvaluationPlan">
+        <MappingFragment StoreEntitySet="EvaluationPlan">
+          <ScalarProperty Name="EvaluationCode" ColumnName="EvaluationCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Consideration" ColumnName="Consideration" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Form" ColumnName="Form" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="GlobalPlanCode" ColumnName="GlobalPlanCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GlobalPlan">
+      <EntityTypeMapping TypeName="QualificationsDBModel.GlobalPlan">
+        <MappingFragment StoreEntitySet="GlobalPlan">
+          <ScalarProperty Name="GlobalPlanCode" ColumnName="GlobalPlanCode" />
+          <ScalarProperty Name="TeachingModuleCode" ColumnName="TeachingModuleCode" />
+          <ScalarProperty Name="Foundamentation" ColumnName="Foundamentation" />
+          <ScalarProperty Name="GeneralObjective" ColumnName="GeneralObjective" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GraduateProgram">
+      <EntityTypeMapping TypeName="QualificationsDBModel.GraduateProgram">
+        <MappingFragment StoreEntitySet="GraduateProgram">
+          <ScalarProperty Name="GraduateProgramaId" ColumnName="GraduateProgramaId" />
+          <ScalarProperty Name="ProgramName" ColumnName="ProgramName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Objective" ColumnName="Objective" />
+          <ScalarProperty Name="Profile" ColumnName="Profile" />
+          <ScalarProperty Name="AdmissionRequeriments" ColumnName="AdmissionRequeriments" />
+          <ScalarProperty Name="ResgistrationCost" ColumnName="ResgistrationCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LearningMethods">
+      <EntityTypeMapping TypeName="QualificationsDBModel.LearningMethods">
+        <MappingFragment StoreEntitySet="LearningMethods">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Justification" ColumnName="Justification" />
+          <ScalarProperty Name="PlanGlobal" ColumnName="PlanGlobal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListAccountStatus">
+      <EntityTypeMapping TypeName="QualificationsDBModel.ListAccountStatus">
+        <MappingFragment StoreEntitySet="ListAccountStatus">
+          <ScalarProperty Name="UserStatusCode" ColumnName="UserStatusCode" />
+          <ScalarProperty Name="UserStatusDescription" ColumnName="UserStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListRole">
+      <EntityTypeMapping TypeName="QualificationsDBModel.ListRole">
+        <MappingFragment StoreEntitySet="ListRole">
+          <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RolDescription" ColumnName="RolDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListTypeProgram">
+      <EntityTypeMapping TypeName="QualificationsDBModel.ListTypeProgram">
+        <MappingFragment StoreEntitySet="ListTypeProgram">
+          <ScalarProperty Name="ListType" ColumnName="ListType" />
+          <ScalarProperty Name="TypeProgram" ColumnName="TypeProgram" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Module">
+      <EntityTypeMapping TypeName="QualificationsDBModel.Module">
+        <MappingFragment StoreEntitySet="Module">
+          <ScalarProperty Name="ModuleCode" ColumnName="ModuleCode" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObjectivesSpecifics">
+      <EntityTypeMapping TypeName="QualificationsDBModel.ObjectivesSpecifics">
+        <MappingFragment StoreEntitySet="ObjectivesSpecifics">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="GlobalPlan" ColumnName="GlobalPlan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OpeningProgram">
+      <EntityTypeMapping TypeName="QualificationsDBModel.OpeningProgram">
+        <MappingFragment StoreEntitySet="OpeningProgram">
+          <ScalarProperty Name="OpeningCode" ColumnName="OpeningCode" />
+          <ScalarProperty Name="ProgramId" ColumnName="ProgramId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Gestion" ColumnName="Gestion" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PasswordPolicy">
+      <EntityTypeMapping TypeName="QualificationsDBModel.PasswordPolicy">
+        <MappingFragment StoreEntitySet="PasswordPolicy">
+          <ScalarProperty Name="PasswordPolicyCode" ColumnName="PasswordPolicyCode" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RegularExpression" ColumnName="RegularExpression" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pensum">
+      <EntityTypeMapping TypeName="QualificationsDBModel.Pensum">
+        <MappingFragment StoreEntitySet="Pensum">
+          <ScalarProperty Name="PensumCode" ColumnName="PensumCode" />
+          <ScalarProperty Name="GraduateProgram" ColumnName="GraduateProgram" />
+          <ScalarProperty Name="ModuleCode" ColumnName="ModuleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="QualificationsDBModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="IdentityCard" ColumnName="IdentityCard" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Profession" ColumnName="Profession" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Qualifications">
+      <EntityTypeMapping TypeName="QualificationsDBModel.Qualifications">
+        <MappingFragment StoreEntitySet="Qualifications">
+          <ScalarProperty Name="QualificationCode" ColumnName="QualificationCode" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="StudentModuleCode" ColumnName="StudentModuleCode" />
+          <ScalarProperty Name="EvaluationPlanCode" ColumnName="EvaluationPlanCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusGlobalPlan">
+      <EntityTypeMapping TypeName="QualificationsDBModel.StatusGlobalPlan">
+        <MappingFragment StoreEntitySet="StatusGlobalPlan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusModule">
+      <EntityTypeMapping TypeName="QualificationsDBModel.StatusModule">
+        <MappingFragment StoreEntitySet="StatusModule">
+          <ScalarProperty Name="StatusModuleCode" ColumnName="StatusModuleCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusOpening">
+      <EntityTypeMapping TypeName="QualificationsDBModel.StatusOpening">
+        <MappingFragment StoreEntitySet="StatusOpening">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusTheme">
+      <EntityTypeMapping TypeName="QualificationsDBModel.StatusTheme">
+        <MappingFragment StoreEntitySet="StatusTheme">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusThemeContent">
+      <EntityTypeMapping TypeName="QualificationsDBModel.StatusThemeContent">
+        <MappingFragment StoreEntitySet="StatusThemeContent">
+          <ScalarProperty Name="StatusThemeContent1" ColumnName="StatusThemeContent" />
+          <ScalarProperty Name="ContentCode" ColumnName="ContentCode" />
+          <ScalarProperty Name="StatusThemeCode" ColumnName="StatusThemeCode" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentModule">
+      <EntityTypeMapping TypeName="QualificationsDBModel.StudentModule">
+        <MappingFragment StoreEntitySet="StudentModule">
+          <ScalarProperty Name="StudentModuleCode" ColumnName="StudentModuleCode" />
+          <ScalarProperty Name="TeachingModuleCode" ColumnName="TeachingModuleCode" />
+          <ScalarProperty Name="Student" ColumnName="Student" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeachingMethods">
+      <EntityTypeMapping TypeName="QualificationsDBModel.TeachingMethods">
+        <MappingFragment StoreEntitySet="TeachingMethods">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Justification" ColumnName="Justification" />
+          <ScalarProperty Name="PlanGlobal" ColumnName="PlanGlobal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeachingModule">
+      <EntityTypeMapping TypeName="QualificationsDBModel.TeachingModule">
+        <MappingFragment StoreEntitySet="TeachingModule">
+          <ScalarProperty Name="TeachingModuleCode" ColumnName="TeachingModuleCode" />
+          <ScalarProperty Name="ModuleCode" ColumnName="ModuleCode" />
+          <ScalarProperty Name="Teacher" ColumnName="Teacher" />
+          <ScalarProperty Name="OpeningCode" ColumnName="OpeningCode" />
+          <ScalarProperty Name="ModuleStartDate" ColumnName="ModuleStartDate" />
+          <ScalarProperty Name="ModuleEndDate" ColumnName="ModuleEndDate" />
+          <ScalarProperty Name="Periods" ColumnName="Periods" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Totals">
+      <EntityTypeMapping TypeName="QualificationsDBModel.Totals">
+        <MappingFragment StoreEntitySet="Totals">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="TotalPartial" ColumnName="TotalPartial" />
+          <ScalarProperty Name="TotalFinal" ColumnName="TotalFinal" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAccount">
+      <EntityTypeMapping TypeName="QualificationsDBModel.UserAccount">
+        <MappingFragment StoreEntitySet="UserAccount">
+          <ScalarProperty Name="UserAccountId" ColumnName="UserAccountId" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="AccountStatus" ColumnName="AccountStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRole">
+      <EntityTypeMapping TypeName="QualificationsDBModel.UserRole">
+        <MappingFragment StoreEntitySet="UserRole">
+          <ScalarProperty Name="UserRoleCode" ColumnName="UserRoleCode" />
+          <ScalarProperty Name="UserAccountId" ColumnName="UserAccountId" />
+          <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Version">
+      <EntityTypeMapping TypeName="QualificationsDBModel.Version">
+        <MappingFragment StoreEntitySet="Version">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProgramVersion" ColumnName="ProgramVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

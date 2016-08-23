@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2097e454-3b04-4cb3-aacf-aefe4e388d79" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/ReportingsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ReportingsService.disco" MetadataType="Disco" ID="28150230-4a29-4907-9cec-be7e7d7166fc" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ReportingsService.svc?disco" />
+    <MetadataFile FileName="ReportingAdminService.wsdl" MetadataType="Wsdl" ID="65e4966b-44dd-4ed3-a217-e5b4a955e217" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ReportingsService.svc?wsdl" />
+    <MetadataFile FileName="ReportingsService.xsd" MetadataType="Schema" ID="2d885a27-9856-402c-83b9-015ed8e97254" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ReportingsService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

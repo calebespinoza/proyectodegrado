@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\solucion" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="QualificationSystem" publishMethod="FTP" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="ListaPlanGlobal.aspx" publishTime="08/10/2011 02:59:08" />
+    <file relUrl="RegistrarPlanGlobal.aspx" publishTime="08/26/2011 05:03:36" />
+    <file relUrl="MPManagerDIPP.Master" publishTime="07/31/2011 12:23:35" />
+    <file relUrl="DIPPMain.aspx" publishTime="07/26/2011 11:08:19" />
+    <file relUrl="RegistrarProgramaPost.aspx" publishTime="08/19/2011 23:08:59" />
+    <file relUrl="MPAdministrator.Master" publishTime="08/26/2011 03:31:03" />
+    <file relUrl="Global.asax" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="MenuDocente.aspx" publishTime="07/31/2011 21:23:26" />
+    <file relUrl="Styles/Site.css" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="MenuAdministrador.aspx" publishTime="08/06/2011 13:54:08" />
+    <file relUrl="ListaDocenteModulo.aspx" publishTime="08/25/2011 21:56:15" />
+    <file relUrl="Site.Master" publishTime="07/27/2011 18:37:34" />
+    <file relUrl="RegistrarMódulo.aspx" publishTime="08/21/2011 16:59:09" />
+    <file relUrl="ListaPlanEvaluacion.aspx" publishTime="07/31/2011 22:27:57" />
+    <file relUrl="RegistrarUsuario.aspx" publishTime="08/17/2011 05:20:47" />
+    <file relUrl="bin/QualificationsWebSystem.pdb" publishTime="08/27/2011 14:59:45" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="RegistrarInscripción.aspx" publishTime="08/26/2011 02:49:39" />
+    <file relUrl="ListaDocentes.aspx" publishTime="08/06/2011 19:16:19" />
+    <file relUrl="bin/AcademicsServicesDIPP.dll" publishTime="08/27/2011 14:59:41" />
+    <file relUrl="ListaProgramaPost.aspx" publishTime="07/31/2011 18:50:20" />
+    <file relUrl="MPStudent.Master" publishTime="08/01/2011 07:52:35" />
+    <file relUrl="ListaInscripciones.aspx" publishTime="08/26/2011 03:27:04" />
+    <file relUrl="ElegirModulo.aspx" publishTime="08/26/2011 05:03:35" />
+    <file relUrl="Account/Login.aspx" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="RegistrarAvance.aspx" publishTime="08/01/2011 02:06:28" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="RegistrarPlanEvaluacion.aspx" publishTime="08/04/2011 19:52:55" />
+    <file relUrl="RegistrarDocenteModulo.aspx" publishTime="08/26/2011 02:49:40" />
+    <file relUrl="Styles/About.aspx" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="Default.aspx" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="ListaUsuarios.aspx" publishTime="08/17/2011 05:10:14" />
+    <file relUrl="bin/QualificationsWebSystem.dll" publishTime="08/27/2011 14:59:45" />
+    <file relUrl="CalificacionesEstudiante.aspx" publishTime="08/01/2011 08:02:30" />
+    <file relUrl="ModificarUsuario.aspx" publishTime="07/31/2011 12:16:24" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="RegistrarAsignación.aspx" publishTime="07/31/2011 21:00:52" />
+    <file relUrl="MPTeacher.Master" publishTime="08/26/2011 04:25:38" />
+    <file relUrl="Account/Web.config" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="ListaProgramasCerrados.aspx" publishTime="08/24/2011 05:27:00" />
+    <file relUrl="ListaProgramasAbiertos.aspx" publishTime="08/24/2011 05:09:48" />
+    <file relUrl="ListaMódulos.aspx" publishTime="08/21/2011 00:14:52" />
+    <file relUrl="RegistrarCalificacion.aspx" publishTime="08/01/2011 10:20:36" />
+    <file relUrl="Web.config" publishTime="08/27/2011 14:59:47" />
+    <file relUrl="Authentication.aspx" publishTime="08/16/2011 12:24:04" />
+    <file relUrl="RegistrarAperturaPrograma.aspx" publishTime="08/24/2011 03:41:04" />
+    <file relUrl="ListaEstudiantes.aspx" publishTime="08/25/2011 23:10:54" />
+    <file relUrl="Account/Register.aspx" publishTime="06/04/2011 22:17:17" />
+    <file relUrl="bin/AcademicsServicesDIPP.pdb" publishTime="08/27/2011 14:59:41" />
+    <file relUrl="ListaModulosPorPrograma.aspx" publishTime="08/23/2011 20:43:56" />
+    <file relUrl="PolíticaContraseñas.aspx" publishTime="08/08/2011 21:08:47" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="06/04/2011 22:17:17" />
+  </publishProfile>
+</publishData>

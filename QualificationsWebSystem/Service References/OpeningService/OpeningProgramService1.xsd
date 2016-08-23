@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AcademicsServicesDIPP" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AcademicsServicesDIPP" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/AcademicServicesHostIIS/OpeningProgramService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:complexType name="OpeningProgram">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GraduateProgram" nillable="true" type="tns:GraduateProgram" />
+          <xs:element minOccurs="0" name="GraduateProgramReference" nillable="true" type="q1:EntityReferenceOfGraduateProgramq1ogP6Jz" />
+          <xs:element minOccurs="0" name="OpeningCode" type="xs:long" />
+          <xs:element minOccurs="0" name="ProgramId" type="xs:long" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="StatusOpening" nillable="true" type="tns:StatusOpening" />
+          <xs:element minOccurs="0" name="StatusOpeningReference" nillable="true" type="q1:EntityReferenceOfStatusOpeningq1ogP6Jz" />
+          <xs:element minOccurs="0" name="TeachingModule" nillable="true" type="tns:ArrayOfTeachingModule" />
+          <xs:element minOccurs="0" name="Version" type="xs:int" />
+          <xs:element minOccurs="0" name="Version1" nillable="true" type="tns:Version" />
+          <xs:element minOccurs="0" name="Version1Reference" nillable="true" type="q1:EntityReferenceOfVersionq1ogP6Jz" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OpeningProgram" nillable="true" type="tns:OpeningProgram" />
+  <xs:complexType name="GraduateProgram">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q2:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdmissionRequeriments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GraduateProgramaId" type="xs:long" />
+          <xs:element minOccurs="0" name="ListTypeProgram" nillable="true" type="tns:ListTypeProgram" />
+          <xs:element minOccurs="0" name="ListTypeProgramReference" nillable="true" type="q2:EntityReferenceOfListTypeProgramq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Objective" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OpeningProgram" nillable="true" type="tns:ArrayOfOpeningProgram" />
+          <xs:element minOccurs="0" name="Pensum" nillable="true" type="tns:ArrayOfPensum" />
+          <xs:element minOccurs="0" name="Profile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProgramName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResgistrationCost" type="xs:double" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GraduateProgram" nillable="true" type="tns:GraduateProgram" />
+  <xs:complexType name="ListTypeProgram">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q3:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GraduateProgram" nillable="true" type="tns:ArrayOfGraduateProgram" />
+          <xs:element minOccurs="0" name="ListType" type="xs:int" />
+          <xs:element minOccurs="0" name="TypeProgram" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListTypeProgram" nillable="true" type="tns:ListTypeProgram" />
+  <xs:complexType name="ArrayOfGraduateProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GraduateProgram" nillable="true" type="tns:GraduateProgram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGraduateProgram" nillable="true" type="tns:ArrayOfGraduateProgram" />
+  <xs:complexType name="ArrayOfOpeningProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OpeningProgram" nillable="true" type="tns:OpeningProgram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOpeningProgram" nillable="true" type="tns:ArrayOfOpeningProgram" />
+  <xs:complexType name="ArrayOfPensum">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pensum" nillable="true" type="tns:Pensum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPensum" nillable="true" type="tns:ArrayOfPensum" />
+  <xs:complexType name="Pensum">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q4:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GraduateProgram" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="GraduateProgram1" nillable="true" type="tns:GraduateProgram" />
+          <xs:element minOccurs="0" name="GraduateProgram1Reference" nillable="true" type="q4:EntityReferenceOfGraduateProgramq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Module" nillable="true" type="tns:Module" />
+          <xs:element minOccurs="0" name="ModuleCode" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="ModuleReference" nillable="true" type="q4:EntityReferenceOfModuleq1ogP6Jz" />
+          <xs:element minOccurs="0" name="PensumCode" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Pensum" nillable="true" type="tns:Pensum" />
+  <xs:complexType name="Module">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q5:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Mode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModuleCode" type="xs:long" />
+          <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Pensum" nillable="true" type="tns:ArrayOfPensum" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="StatusModule" nillable="true" type="tns:StatusModule" />
+          <xs:element minOccurs="0" name="StatusModuleReference" nillable="true" type="q5:EntityReferenceOfStatusModuleq1ogP6Jz" />
+          <xs:element minOccurs="0" name="TeachingModule" nillable="true" type="tns:ArrayOfTeachingModule" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Module" nillable="true" type="tns:Module" />
+  <xs:complexType name="StatusModule">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q6:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Module" nillable="true" type="tns:ArrayOfModule" />
+          <xs:element minOccurs="0" name="StatusModuleCode" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StatusModule" nillable="true" type="tns:StatusModule" />
+  <xs:complexType name="ArrayOfModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Module" nillable="true" type="tns:Module" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModule" nillable="true" type="tns:ArrayOfModule" />
+  <xs:complexType name="ArrayOfTeachingModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TeachingModule" nillable="true" type="tns:TeachingModule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeachingModule" nillable="true" type="tns:ArrayOfTeachingModule" />
+  <xs:complexType name="TeachingModule">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q7:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GlobalPlan" nillable="true" type="tns:ArrayOfGlobalPlan" />
+          <xs:element minOccurs="0" name="Module" nillable="true" type="tns:Module" />
+          <xs:element minOccurs="0" name="ModuleCode" type="xs:long" />
+          <xs:element minOccurs="0" name="ModuleEndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModuleReference" nillable="true" type="q7:EntityReferenceOfModuleq1ogP6Jz" />
+          <xs:element minOccurs="0" name="ModuleStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OpeningCode" type="xs:long" />
+          <xs:element minOccurs="0" name="OpeningProgram" nillable="true" type="tns:OpeningProgram" />
+          <xs:element minOccurs="0" name="OpeningProgramReference" nillable="true" type="q7:EntityReferenceOfOpeningProgramq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Periods" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="StudentModule" nillable="true" type="tns:ArrayOfStudentModule" />
+          <xs:element minOccurs="0" name="Teacher" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="TeachingModuleCode" type="xs:long" />
+          <xs:element minOccurs="0" name="UserAccount" nillable="true" type="tns:UserAccount" />
+          <xs:element minOccurs="0" name="UserAccountReference" nillable="true" type="q7:EntityReferenceOfUserAccountq1ogP6Jz" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TeachingModule" nillable="true" type="tns:TeachingModule" />
+  <xs:complexType name="ArrayOfGlobalPlan">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GlobalPlan" nillable="true" type="tns:GlobalPlan" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGlobalPlan" nillable="true" type="tns:ArrayOfGlobalPlan" />
+  <xs:complexType name="GlobalPlan">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q8:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bibliography" nillable="true" type="tns:ArrayOfBibliography" />
+          <xs:element minOccurs="0" name="ContentThematic" nillable="true" type="tns:ArrayOfContentThematic" />
+          <xs:element minOccurs="0" name="EndEvaluation" nillable="true" type="tns:EndEvaluation" />
+          <xs:element minOccurs="0" name="EndEvaluationReference" nillable="true" type="q8:EntityReferenceOfEndEvaluationq1ogP6Jz" />
+          <xs:element minOccurs="0" name="EvaluationForms" nillable="true" type="tns:ArrayOfEvaluationForms" />
+          <xs:element minOccurs="0" name="EvaluationPlan" nillable="true" type="tns:ArrayOfEvaluationPlan" />
+          <xs:element minOccurs="0" name="Fecha" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Foundamentation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GeneralObjective" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalPlanCode" type="xs:long" />
+          <xs:element minOccurs="0" name="LearningMethods" nillable="true" type="tns:ArrayOfLearningMethods" />
+          <xs:element minOccurs="0" name="ObjectivesSpecifics" nillable="true" type="tns:ArrayOfObjectivesSpecifics" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="StatusGlobalPlan" nillable="true" type="tns:StatusGlobalPlan" />
+          <xs:element minOccurs="0" name="StatusGlobalPlanReference" nillable="true" type="q8:EntityReferenceOfStatusGlobalPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="TeachingMethods" nillable="true" type="tns:ArrayOfTeachingMethods" />
+          <xs:element minOccurs="0" name="TeachingModule" nillable="true" type="tns:TeachingModule" />
+          <xs:element minOccurs="0" name="TeachingModuleCode" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="TeachingModuleReference" nillable="true" type="q8:EntityReferenceOfTeachingModuleq1ogP6Jz" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GlobalPlan" nillable="true" type="tns:GlobalPlan" />
+  <xs:complexType name="ArrayOfBibliography">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Bibliography" nillable="true" type="tns:Bibliography" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBibliography" nillable="true" type="tns:ArrayOfBibliography" />
+  <xs:complexType name="Bibliography">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q9:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Author" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" type="xs:long" />
+          <xs:element minOccurs="0" name="Editorial" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalPlan" type="xs:long" />
+          <xs:element minOccurs="0" name="GlobalPlan1" nillable="true" type="tns:GlobalPlan" />
+          <xs:element minOccurs="0" name="GlobalPlan1Reference" nillable="true" type="q9:EntityReferenceOfGlobalPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Year" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Bibliography" nillable="true" type="tns:Bibliography" />
+  <xs:complexType name="ArrayOfContentThematic">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContentThematic" nillable="true" type="tns:ContentThematic" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContentThematic" nillable="true" type="tns:ArrayOfContentThematic" />
+  <xs:complexType name="ContentThematic">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q10:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" type="xs:long" />
+          <xs:element minOccurs="0" name="GlobalPlan" type="xs:long" />
+          <xs:element minOccurs="0" name="GlobalPlan1" nillable="true" type="tns:GlobalPlan" />
+          <xs:element minOccurs="0" name="GlobalPlan1Reference" nillable="true" type="q10:EntityReferenceOfGlobalPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="GroupWork" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InstrumentalObjectives" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvestigationThemes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PersonalWork" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatusThemeContent" nillable="true" type="tns:ArrayOfStatusThemeContent" />
+          <xs:element minOccurs="0" name="Theme" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContentThematic" nillable="true" type="tns:ContentThematic" />
+  <xs:complexType name="ArrayOfStatusThemeContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StatusThemeContent" nillable="true" type="tns:StatusThemeContent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStatusThemeContent" nillable="true" type="tns:ArrayOfStatusThemeContent" />
+  <xs:complexType name="StatusThemeContent">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q11:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContentCode" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="ContentThematic" nillable="true" type="tns:ContentThematic" />
+          <xs:element minOccurs="0" name="ContentThematicReference" nillable="true" type="q11:EntityReferenceOfContentThematicq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Date" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StatusTheme" nillable="true" type="tns:StatusTheme" />
+          <xs:element minOccurs="0" name="StatusThemeCode" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="StatusThemeContent1" type="xs:long" />
+          <xs:element minOccurs="0" name="StatusThemeReference" nillable="true" type="q11:EntityReferenceOfStatusThemeq1ogP6Jz" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StatusThemeContent" nillable="true" type="tns:StatusThemeContent" />
+  <xs:complexType name="StatusTheme">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q12:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatusThemeContent" nillable="true" type="tns:ArrayOfStatusThemeContent" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StatusTheme" nillable="true" type="tns:StatusTheme" />
+  <xs:complexType name="EndEvaluation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q13:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" type="xs:long" />
+          <xs:element minOccurs="0" name="Consideration" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="Date" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Form" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalPlan" nillable="true" type="tns:GlobalPlan" />
+          <xs:element minOccurs="0" name="GlobalPlanReference" nillable="true" type="q13:EntityReferenceOfGlobalPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Mode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EndEvaluation" nillable="true" type="tns:EndEvaluation" />
+  <xs:complexType name="ArrayOfEvaluationForms">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EvaluationForms" nillable="true" type="tns:EvaluationForms" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEvaluationForms" nillable="true" type="tns:ArrayOfEvaluationForms" />
+  <xs:complexType name="EvaluationForms">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q14:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" type="xs:long" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EvaluationForm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalPlan" type="xs:long" />
+          <xs:element minOccurs="0" name="GlobalPlan1" nillable="true" type="tns:GlobalPlan" />
+          <xs:element minOccurs="0" name="GlobalPlan1Reference" nillable="true" type="q14:EntityReferenceOfGlobalPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Justification" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EvaluationForms" nillable="true" type="tns:EvaluationForms" />
+  <xs:complexType name="ArrayOfEvaluationPlan">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EvaluationPlan" nillable="true" type="tns:EvaluationPlan" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEvaluationPlan" nillable="true" type="tns:ArrayOfEvaluationPlan" />
+  <xs:complexType name="EvaluationPlan">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q15:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Consideration" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EvaluationCode" type="xs:long" />
+          <xs:element minOccurs="0" name="Form" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalPlan" nillable="true" type="tns:GlobalPlan" />
+          <xs:element minOccurs="0" name="GlobalPlanCode" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="GlobalPlanReference" nillable="true" type="q15:EntityReferenceOfGlobalPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Mode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Qualifications" nillable="true" type="tns:ArrayOfQualifications" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EvaluationPlan" nillable="true" type="tns:EvaluationPlan" />
+  <xs:complexType name="ArrayOfQualifications">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Qualifications" nillable="true" type="tns:Qualifications" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQualifications" nillable="true" type="tns:ArrayOfQualifications" />
+  <xs:complexType name="Qualifications">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q16:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EvaluationPlan" nillable="true" type="tns:EvaluationPlan" />
+          <xs:element minOccurs="0" name="EvaluationPlanCode" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="EvaluationPlanReference" nillable="true" type="q16:EntityReferenceOfEvaluationPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Qualification" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="QualificationCode" type="xs:long" />
+          <xs:element minOccurs="0" name="StudentModule" nillable="true" type="tns:StudentModule" />
+          <xs:element minOccurs="0" name="StudentModuleCode" type="xs:long" />
+          <xs:element minOccurs="0" name="StudentModuleReference" nillable="true" type="q16:EntityReferenceOfStudentModuleq1ogP6Jz" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Qualifications" nillable="true" type="tns:Qualifications" />
+  <xs:complexType name="StudentModule">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q17:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Person" nillable="true" type="tns:Person" />
+          <xs:element minOccurs="0" name="PersonReference" nillable="true" type="q17:EntityReferenceOfPersonq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Qualifications" nillable="true" type="tns:ArrayOfQualifications" />
+          <xs:element minOccurs="0" name="Student" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="StudentModuleCode" type="xs:long" />
+          <xs:element minOccurs="0" name="TeachingModule" nillable="true" type="tns:TeachingModule" />
+          <xs:element minOccurs="0" name="TeachingModuleCode" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="TeachingModuleReference" nillable="true" type="q17:EntityReferenceOfTeachingModuleq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Totals" nillable="true" type="tns:Totals" />
+          <xs:element minOccurs="0" name="TotalsReference" nillable="true" type="q17:EntityReferenceOfTotalsq1ogP6Jz" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StudentModule" nillable="true" type="tns:StudentModule" />
+  <xs:complexType name="Person">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q18:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HomeAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HomePhone" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="IdentityCard" type="xs:long" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MobilePhone" type="xs:long" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PersonId" type="xs:long" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Profession" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Sex" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StudentModule" nillable="true" type="tns:ArrayOfStudentModule" />
+          <xs:element minOccurs="0" name="UserAccount" nillable="true" type="tns:UserAccount" />
+          <xs:element minOccurs="0" name="UserAccountReference" nillable="true" type="q18:EntityReferenceOfUserAccountq1ogP6Jz" />
+          <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:complexType name="ArrayOfStudentModule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudentModule" nillable="true" type="tns:StudentModule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudentModule" nillable="true" type="tns:ArrayOfStudentModule" />
+  <xs:complexType name="UserAccount">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q19:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Account" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="ListAccountStatus" nillable="true" type="tns:ListAccountStatus" />
+          <xs:element minOccurs="0" name="ListAccountStatusReference" nillable="true" type="q19:EntityReferenceOfListAccountStatusq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Person" nillable="true" type="tns:Person" />
+          <xs:element minOccurs="0" name="PersonReference" nillable="true" type="q19:EntityReferenceOfPersonq1ogP6Jz" />
+          <xs:element minOccurs="0" name="TeachingModule" nillable="true" type="tns:ArrayOfTeachingModule" />
+          <xs:element minOccurs="0" name="UserAccountId" type="xs:long" />
+          <xs:element minOccurs="0" name="UserRole" nillable="true" type="tns:ArrayOfUserRole" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserAccount" nillable="true" type="tns:UserAccount" />
+  <xs:complexType name="ListAccountStatus">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q20:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="UserAccount" nillable="true" type="tns:ArrayOfUserAccount" />
+          <xs:element minOccurs="0" name="UserStatusCode" type="xs:int" />
+          <xs:element minOccurs="0" name="UserStatusDescription" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListAccountStatus" nillable="true" type="tns:ListAccountStatus" />
+  <xs:complexType name="ArrayOfUserAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserAccount" nillable="true" type="tns:UserAccount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserAccount" nillable="true" type="tns:ArrayOfUserAccount" />
+  <xs:complexType name="ArrayOfUserRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserRole" nillable="true" type="tns:UserRole" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserRole" nillable="true" type="tns:ArrayOfUserRole" />
+  <xs:complexType name="UserRole">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q21:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListRole" nillable="true" type="tns:ListRole" />
+          <xs:element minOccurs="0" name="ListRoleReference" nillable="true" type="q21:EntityReferenceOfListRoleq1ogP6Jz" />
+          <xs:element minOccurs="0" name="RoleCode" type="xs:long" />
+          <xs:element minOccurs="0" name="UserAccount" nillable="true" type="tns:UserAccount" />
+          <xs:element minOccurs="0" name="UserAccountId" type="xs:long" />
+          <xs:element minOccurs="0" name="UserAccountReference" nillable="true" type="q21:EntityReferenceOfUserAccountq1ogP6Jz" />
+          <xs:element minOccurs="0" name="UserRoleCode" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserRole" nillable="true" type="tns:UserRole" />
+  <xs:complexType name="ListRole">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q22:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RolDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoleCode" type="xs:long" />
+          <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserRole" nillable="true" type="tns:ArrayOfUserRole" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListRole" nillable="true" type="tns:ListRole" />
+  <xs:complexType name="Totals">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q23:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" type="xs:long" />
+          <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StudentModule" nillable="true" type="tns:StudentModule" />
+          <xs:element minOccurs="0" name="StudentModuleReference" nillable="true" type="q23:EntityReferenceOfStudentModuleq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Total" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="TotalFinal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="TotalPartial" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Totals" nillable="true" type="tns:Totals" />
+  <xs:complexType name="ArrayOfLearningMethods">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LearningMethods" nillable="true" type="tns:LearningMethods" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLearningMethods" nillable="true" type="tns:ArrayOfLearningMethods" />
+  <xs:complexType name="LearningMethods">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q24:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" type="xs:long" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalPlan" nillable="true" type="tns:GlobalPlan" />
+          <xs:element minOccurs="0" name="GlobalPlanReference" nillable="true" type="q24:EntityReferenceOfGlobalPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Justification" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MethodName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PlanGlobal" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LearningMethods" nillable="true" type="tns:LearningMethods" />
+  <xs:complexType name="ArrayOfObjectivesSpecifics">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ObjectivesSpecifics" nillable="true" type="tns:ObjectivesSpecifics" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfObjectivesSpecifics" nillable="true" type="tns:ArrayOfObjectivesSpecifics" />
+  <xs:complexType name="ObjectivesSpecifics">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q25:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" type="xs:long" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalPlan" type="xs:long" />
+          <xs:element minOccurs="0" name="GlobalPlan1" nillable="true" type="tns:GlobalPlan" />
+          <xs:element minOccurs="0" name="GlobalPlan1Reference" nillable="true" type="q25:EntityReferenceOfGlobalPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Number" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObjectivesSpecifics" nillable="true" type="tns:ObjectivesSpecifics" />
+  <xs:complexType name="StatusGlobalPlan">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q26:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalPlan" nillable="true" type="tns:ArrayOfGlobalPlan" />
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StatusGlobalPlan" nillable="true" type="tns:StatusGlobalPlan" />
+  <xs:complexType name="ArrayOfTeachingMethods">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TeachingMethods" nillable="true" type="tns:TeachingMethods" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeachingMethods" nillable="true" type="tns:ArrayOfTeachingMethods" />
+  <xs:complexType name="TeachingMethods">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q27:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" type="xs:long" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalPlan" nillable="true" type="tns:GlobalPlan" />
+          <xs:element minOccurs="0" name="GlobalPlanReference" nillable="true" type="q27:EntityReferenceOfGlobalPlanq1ogP6Jz" />
+          <xs:element minOccurs="0" name="Justification" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MethodName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PlanGlobal" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TeachingMethods" nillable="true" type="tns:TeachingMethods" />
+  <xs:complexType name="StatusOpening">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q28:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="OpeningProgram" nillable="true" type="tns:ArrayOfOpeningProgram" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StatusOpening" nillable="true" type="tns:StatusOpening" />
+  <xs:complexType name="Version">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q29:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="OpeningProgram" nillable="true" type="tns:ArrayOfOpeningProgram" />
+          <xs:element minOccurs="0" name="ProgramVersion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Version" nillable="true" type="tns:Version" />
+</xs:schema>

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QualificationsDBModelStoreContainer" CdmEntityContainer="QualificationsDBEntities">
+    <EntitySetMapping Name="GraduateProgram">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.GraduateProgram)">
+        <MappingFragment StoreEntitySet="GraduateProgram">
+          <ScalarProperty Name="GraduateProgramaId" ColumnName="GraduateProgramaId" />
+          <ScalarProperty Name="ProgramName" ColumnName="ProgramName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Objective" ColumnName="Objective" />
+          <ScalarProperty Name="Profile" ColumnName="Profile" />
+          <ScalarProperty Name="AdmissionRequeriments" ColumnName="AdmissionRequeriments" />
+          <ScalarProperty Name="ResgistrationCost" ColumnName="ResgistrationCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListAccountStatus">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.ListAccountStatus)">
+        <MappingFragment StoreEntitySet="ListAccountStatus">
+          <ScalarProperty Name="UserStatusCode" ColumnName="UserStatusCode" />
+          <ScalarProperty Name="UserStatusDescription" ColumnName="UserStatusDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListRole">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.ListRole)">
+        <MappingFragment StoreEntitySet="ListRole">
+          <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RolDescription" ColumnName="RolDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListTypeProgram">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.ListTypeProgram)">
+        <MappingFragment StoreEntitySet="ListTypeProgram">
+          <ScalarProperty Name="ListType" ColumnName="ListType" />
+          <ScalarProperty Name="TypeProgram" ColumnName="TypeProgram" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Module">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.Module)">
+        <MappingFragment StoreEntitySet="Module">
+          <ScalarProperty Name="ModuleCode" ColumnName="ModuleCode" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Objective" ColumnName="Objective" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OpeningProgram">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.OpeningProgram)">
+        <MappingFragment StoreEntitySet="OpeningProgram">
+          <ScalarProperty Name="OpeningCode" ColumnName="OpeningCode" />
+          <ScalarProperty Name="ProgramId" ColumnName="ProgramId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.Person)">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="IdentityCard" ColumnName="IdentityCard" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="StateProvince" ColumnName="StateProvince" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Profession" ColumnName="Profession" />
+          <ScalarProperty Name="CivilStatus" ColumnName="CivilStatus" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.sysdiagrams)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeachingModule">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.TeachingModule)">
+        <MappingFragment StoreEntitySet="TeachingModule">
+          <ScalarProperty Name="TeachingModuleCode" ColumnName="TeachingModuleCode" />
+          <ScalarProperty Name="ModuleCode" ColumnName="ModuleCode" />
+          <ScalarProperty Name="Teacher" ColumnName="Teacher" />
+          <ScalarProperty Name="OpeningCode" ColumnName="OpeningCode" />
+          <ScalarProperty Name="ModuleStartDate" ColumnName="ModuleStartDate" />
+          <ScalarProperty Name="ModuleEndDate" ColumnName="ModuleEndDate" />
+          <ScalarProperty Name="Periods" ColumnName="Periods" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="Weeks" ColumnName="Weeks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAccount">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.UserAccount)">
+        <MappingFragment StoreEntitySet="UserAccount">
+          <ScalarProperty Name="UserAccountId" ColumnName="UserAccountId" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="AccountStatus" ColumnName="AccountStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRole">
+      <EntityTypeMapping TypeName="IsTypeOf(QualificationsDBModel.UserRole)">
+        <MappingFragment StoreEntitySet="UserRole">
+          <ScalarProperty Name="UserRoleCode" ColumnName="UserRoleCode" />
+          <ScalarProperty Name="UserAccountId" ColumnName="UserAccountId" />
+          <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pensum">
+      <EntityTypeMapping TypeName="QualificationsDBModel.Pensum">
+        <MappingFragment StoreEntitySet="Pensum">
+          <ScalarProperty Name="ModuleCode" ColumnName="ModuleCode" />
+          <ScalarProperty Name="GraduateProgram" ColumnName="GraduateProgram" />
+          <ScalarProperty Name="PensumCode" ColumnName="PensumCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

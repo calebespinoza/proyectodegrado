@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4561845b-c0f8-4e1e-b786-a811789e614e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/QualificationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="QualificationAdminService.wsdl" MetadataType="Wsdl" ID="2533917e-2a6c-4701-8a53-162b6fec6384" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/QualificationService.svc?wsdl" />
+    <MetadataFile FileName="QualificationService.xsd" MetadataType="Schema" ID="6a6d43b3-569a-4d82-b698-4485d121a252" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/QualificationService.svc?xsd=xsd3" />
+    <MetadataFile FileName="QualificationService1.xsd" MetadataType="Schema" ID="c25c21ed-384e-4508-912c-66a9cd1b2bf1" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/QualificationService.svc?xsd=xsd4" />
+    <MetadataFile FileName="QualificationService.disco" MetadataType="Disco" ID="97641a22-22e1-4d16-b734-1148d39ec864" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/QualificationService.svc?disco" />
+    <MetadataFile FileName="QualificationService2.xsd" MetadataType="Schema" ID="4eabbdb4-29aa-43c7-8e3a-0bd3b65a98ab" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/QualificationService.svc?xsd=xsd2" />
+    <MetadataFile FileName="QualificationService3.xsd" MetadataType="Schema" ID="9fecf745-0d3b-4342-8ca9-a5b7d1b44d91" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/QualificationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="QualificationService4.xsd" MetadataType="Schema" ID="87e5f219-81bb-4152-a6c8-13b13cdc8600" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/QualificationService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

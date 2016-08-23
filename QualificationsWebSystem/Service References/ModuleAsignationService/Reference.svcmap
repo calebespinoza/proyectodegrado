@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cc856e83-c50a-46d2-9e71-fb9abd129ae9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/ModuleAsingService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ModuleAsingService.xsd" MetadataType="Schema" ID="0d1e2ca2-d41f-4233-8406-95db57ca6bec" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAsingService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ModuleAsingService1.xsd" MetadataType="Schema" ID="1342730d-f959-4fd1-bf8c-ed0c510b5c24" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAsingService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ModuleAsingService2.xsd" MetadataType="Schema" ID="5e32de7d-a826-41df-b815-643d874d6846" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAsingService.svc?xsd=xsd4" />
+    <MetadataFile FileName="ModuleAsigAdminService.wsdl" MetadataType="Wsdl" ID="c79f3915-abbb-4a3e-87f8-27b810166470" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAsingService.svc?wsdl" />
+    <MetadataFile FileName="ModuleAsingService3.xsd" MetadataType="Schema" ID="74515ba4-fcd8-45d9-bc6f-6866ca254b02" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAsingService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ModuleAsingService4.xsd" MetadataType="Schema" ID="d929e30f-2644-47a5-99e0-170bd96229b7" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAsingService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ModuleAsingService.disco" MetadataType="Disco" ID="fa974ad0-9f00-4d9b-a1db-a3b085c85570" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/ModuleAsingService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

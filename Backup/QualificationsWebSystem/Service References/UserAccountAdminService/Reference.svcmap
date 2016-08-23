@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b5b305ee-6b75-4884-bbeb-d369be8881d9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AcademicServicesHostIIS/UserAccountService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserAccountService.disco" MetadataType="Disco" ID="dfdc4b6c-8705-4fdf-aef1-2a63fb2f6520" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/UserAccountService.svc?disco" />
+    <MetadataFile FileName="UserAccountService.xsd" MetadataType="Schema" ID="5104aabc-32b5-4686-8bce-6bc1770e9b77" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/UserAccountService.svc?xsd=xsd2" />
+    <MetadataFile FileName="UserAccountService1.xsd" MetadataType="Schema" ID="ae1b4a2b-51be-49b2-90fd-5e4d88001590" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/UserAccountService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UserAccountAdminService.wsdl" MetadataType="Wsdl" ID="d36ac014-643d-4fe6-9b0b-d5c6d57cf3af" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/UserAccountService.svc?wsdl" />
+    <MetadataFile FileName="UserAccountService2.xsd" MetadataType="Schema" ID="39ae5f9f-1677-4e26-85b3-02293a703777" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/UserAccountService.svc?xsd=xsd1" />
+    <MetadataFile FileName="UserAccountService3.xsd" MetadataType="Schema" ID="8b51e802-9495-4f8e-a801-e070aa3e92dc" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/UserAccountService.svc?xsd=xsd3" />
+    <MetadataFile FileName="UserAccountService4.xsd" MetadataType="Schema" ID="2ae5533b-0fc4-4bec-a889-3d6ddc97bac3" SourceId="1" SourceUrl="http://localhost/AcademicServicesHostIIS/UserAccountService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
